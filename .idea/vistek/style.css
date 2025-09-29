@@ -1,114 +1,95 @@
+
+
+/* Вариант 2: Зелено-коричневая гамма */
+/*:root {*/
+/*    --color-primary: #4a5d23;*/
+/*    --color-primary-dark: #3d4f1c;*/
+/*    --color-primary-darker: #2f3e15;*/
+/*    --color-accent: #8bc34a;*/
+/*    --color-accent-dark: #689f38;*/
+/*    --color-bg-main: #faf9f7;*/
+/*    --color-bg-secondary: #f5f2ed;*/
+/*    --color-bg-tertiary: #ebe6dc;*/
+/*    --color-bg-card: #f5f2ed;*/
+/*    --color-bg-service: #ebe6dc;*/
+/*    --color-bg-service-end: #d7c4a8;*/
+/*    --color-bg-header: #8d6e63;*/
+/*    --color-bg-footer: #6d4c2a;*/
+/*    --color-text-primary: #4a5d23;*/
+/*    --color-text-secondary: #6d4c2a;*/
+/*    --color-text-tertiary: #8d6e63;*/
+/*    --color-text-light: #a1887f;*/
+/*    --color-text-white: #faf9f7;*/
+/*    --color-text-footer: #faf9f7;*/
+/*    --color-text-footer-accent: #8bc34a;*/
+/*    --color-text-header: #faf9f7;*/
+/*    --color-border-light: #ebe6dc;*/
+/*    --color-border-medium: #d7ccc8;*/
+/*    --color-border-focus: #8bc34a;*/
+/*    --shadow-light: rgba(74, 93, 35, 0.08);*/
+/*    --shadow-medium: rgba(74, 93, 35, 0.12);*/
+/*    --shadow-heavy: rgba(74, 93, 35, 0.15);*/
+/*    --shadow-accent: rgba(139, 195, 74, 0.3);*/
+/*    --shadow-accent-hover: rgba(139, 195, 74, 0.4);*/
+/*    --overlay-light: rgba(139, 195, 74, 0.05);*/
+/*    --overlay-medium: rgba(139, 195, 74, 0.08);*/
+/*    --glass-bg: rgba(250, 249, 247, 0.98);*/
+/*    --brown-overlay: rgba(141, 110, 99, 0.1);*/
+/*    --brown-overlay-hover: rgba(141, 110, 99, 0.2);*/
+/*}*/
+
+
+/* ===================================
+   CSS VARIABLES & ROOT
+   =================================== */
 :root {
-    --color-primary: #1f4e79;
-    --color-primary-dark: #163a5c;
-    --color-primary-darker: #0d2640;
-    --color-accent: #4a9eff;
-    --color-accent-dark: #2e7bd6;
+    /* Primary Colors */
+    --color-primary: #2d5016;
+    --color-primary-dark: #1f3910;
+    --color-primary-darker: #14260a;
+    --color-accent: #4caf50;
+    --color-accent-dark: #388e3c;
 
-    --color-bg-main: #f5f8fc;
-    --color-bg-secondary: #e8f1fd;
-    --color-bg-tertiary: #d1e7fb;
+    /* Background Colors */
+    --color-bg-main: #f8fbf6;
+    --color-bg-secondary: #f1f8e9;
+    --color-bg-tertiary: #e8f5e8;
     --color-bg-card: #ffffff;
-    --color-bg-service: #e6f3ff;
-    --color-bg-service-end: #cce7ff;
+    --color-bg-service: #e8f5e8;
+    --color-bg-service-end: #dcedc8;
 
-    --color-text-primary: #1f4e79;
-    --color-text-secondary: #2c5aa0;
-    --color-text-tertiary: #6b8db5;
-    --color-text-light: #a3c2e0;
+    /* Text Colors */
+    --color-text-primary: #2d5016;
+    --color-text-secondary: #4a7c59;
+    --color-text-tertiary: #689f38;
+    --color-text-light: #a5d6a7;
     --color-text-white: #ffffff;
-    --color-text-footer: #e8f1fd;
-    --color-text-footer-accent: #4a9eff;
+    --color-text-footer: #e8f5e8;
+    --color-text-footer-accent: #4caf50;
 
-    --color-border-light: #d1e7fb;
-    --color-border-medium: #a3c2e0;
-    --color-border-focus: #4a9eff;
+    /* Border Colors */
+    --color-border-light: #e8f5e8;
+    --color-border-medium: #a5d6a7;
+    --color-border-focus: #4caf50;
 
-    --shadow-light: rgba(31, 78, 121, 0.08);
-    --shadow-medium: rgba(31, 78, 121, 0.12);
-    --shadow-heavy: rgba(31, 78, 121, 0.15);
-    --shadow-accent: rgba(74, 158, 255, 0.3);
-    --shadow-accent-hover: rgba(74, 158, 255, 0.4);
+    /* Shadows */
+    --shadow-light: rgba(45, 80, 22, 0.08);
+    --shadow-medium: rgba(45, 80, 22, 0.12);
+    --shadow-heavy: rgba(45, 80, 22, 0.15);
+    --shadow-accent: rgba(76, 175, 80, 0.3);
+    --shadow-accent-hover: rgba(76, 175, 80, 0.4);
 
-    --overlay-light: rgba(74, 158, 255, 0.05);
-    --overlay-medium: rgba(74, 158, 255, 0.08);
-    --glass-bg: rgba(245, 248, 252, 0.98);
+    /* Overlays */
+    --overlay-light: rgba(76, 175, 80, 0.05);
+    --overlay-medium: rgba(76, 175, 80, 0.08);
+    --glass-bg: rgba(248, 251, 246, 0.98);
     --white-overlay: rgba(255, 255, 255, 0.1);
     --white-overlay-hover: rgba(255, 255, 255, 0.2);
 }
 
-
-nav.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-
-
-/* Навигация по умолчанию */
-.nav-links {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-}
-
-.nav-links li {
-    display: inline-block;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-
-/* Бургер по умолчанию скрыт */
-.burger {
-    display: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-}
-
-/* ======= АДАПТИВ ======= */
-@media (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        top: 90px; /* высота шапки */
-        right: 0;
-        background: #fff;
-        flex-direction: column;
-        width: 200px;
-        border: 1px solid #ddd;
-        padding: 1rem;
-        display: none; /* скрыто по умолчанию */
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .burger {
-        display: block;
-    }
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.logo-img {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-height:1.5em;
-    width: auto;
-    object-fit: contain;
-}
-
-
+/* ===================================
+   GLOBAL RESET & BASE STYLES
+   =================================== */
 * {
     margin: 0;
     padding: 0;
@@ -122,7 +103,112 @@ body {
     background: linear-gradient(135deg, var(--color-bg-main) 0%, var(--color-bg-tertiary) 100%);
 }
 
-/* ==== Cookie Banner ==== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===================================
+   HEADER & NAVIGATION
+   =================================== */
+header {
+    height: 13%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 20px var(--shadow-light);
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, var(--color-primary), var(--color-primary-darker));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 1.5em;
+    width: auto;
+    object-fit: contain;
+    padding-right: 1rem;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+    background: rgba(76, 175, 80, 0.06); /* едва заметный фон */
+    box-shadow: 0 4px 16px rgba(76, 175, 80, 0.15),
+    0 2px 6px rgba(0, 0, 0, 0.08); /* мягкое свечение с глубиной */
+    transform: translateY(-2px); /* лёгкий подъём */
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+    transform: translateY(-2px);
+    background: rgba(var(--color-primary), 0.05);
+}
+
+.nav-links a.active {
+    background: linear-gradient(45deg, var(--color-primary), var(--color-primary-dark));
+    color: var(--color-text-white);
+}
+
+/* Mobile Menu (Burger) */
+.burger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* ===================================
+   COOKIE BANNER
+   =================================== */
 #cookie-banner {
     position: fixed;
     bottom: 20px;
@@ -140,23 +226,18 @@ body {
     border: 1px solid var(--color-border-light);
 }
 
-@keyframes fadeIn {
-    from {opacity: 0; transform: translate(-50%, 20px);}
-    to {opacity: 1; transform: translate(-50%, 0);}
-}
-
 #cookie-banner h2 {
     margin-top: 0;
     font-size: 18px;
     display: flex;
     align-items: center;
     gap: 8px;
-    color: var(--color-text-primary);
+    color: black;
 }
 
 #cookie-banner p {
     font-size: 14px;
-    color: var(--color-text-secondary);
+    color: black;
     margin: 10px 0 15px;
 }
 
@@ -204,67 +285,9 @@ body {
     background: var(--color-accent-dark);
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header */
-header {
-    background: var(--glass-bg);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 20px var(--shadow-light);
-    border-bottom: 1px solid var(--color-border-light);
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-}
-
-.logo {
-    font-size: 2rem;
-    font-weight: bold;
-    background: linear-gradient(45deg, var(--color-primary), var(--color-primary-darker));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--color-text-primary);
-    font-weight: 500;
-    transition: all 0.3s ease;
-    position: relative;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-}
-
-.nav-links a:hover {
-    color: var(--color-primary);
-    transform: translateY(-2px);
-    background: rgba(var(--color-primary), 0.05);
-}
-
-.nav-links a.active {
-    background: linear-gradient(45deg, var(--color-primary), var(--color-primary-dark));
-    color: var(--color-text-white);
-}
-
-/* Page containers */
+/* ===================================
+   PAGE LAYOUT SYSTEM
+   =================================== */
 .page {
     display: none;
     min-height: 100vh;
@@ -274,7 +297,9 @@ nav {
     display: block;
 }
 
-/* Hero Section */
+/* ===================================
+   HERO SECTION
+   =================================== */
 .hero {
     margin-top: 80px;
     padding: 100px 0;
@@ -284,7 +309,7 @@ nav {
     overflow: hidden;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 50%, var(--color-primary-darker) 100%);
 }
-
+hero
 .hero::before {
     content: '';
     position: absolute;
@@ -314,7 +339,11 @@ nav {
     opacity: 0.95;
 }
 
-.cta-button {
+/* ===================================
+   BUTTONS & CTA ELEMENTS
+   =================================== */
+.cta-button,
+.back-button {
     display: inline-block;
     background: linear-gradient(45deg, var(--color-accent), var(--color-accent-dark));
     color: var(--color-text-white);
@@ -331,13 +360,28 @@ nav {
     letter-spacing: 0.5px;
 }
 
-.cta-button:hover {
+.cta-button:hover,
+.back-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px var(--shadow-accent-hover);
     background: linear-gradient(45deg, var(--color-accent-dark), var(--color-accent));
 }
 
-/* Sections */
+.back-button {
+    padding: 12px 30px;
+    margin-bottom: 2rem;
+    animation: none;
+    background: linear-gradient(45deg, var(--color-primary), var(--color-primary-dark));
+}
+
+.back-button:hover {
+    background: linear-gradient(45deg, var(--color-primary-dark), var(--color-primary-darker));
+    box-shadow: 0 6px 20px var(--shadow-accent-hover);
+}
+
+/* ===================================
+   SECTION LAYOUTS
+   =================================== */
 .section {
     padding: 80px 0;
     background: var(--color-bg-main);
@@ -368,7 +412,11 @@ nav {
     border-radius: 2px;
 }
 
-/* Values grid */
+/* ===================================
+   CARD COMPONENTS
+   =================================== */
+
+/* Value Cards */
 .values-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -399,12 +447,13 @@ nav {
     font-weight: 600;
 }
 
-/* Services */
+/* Service Cards */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    padding-bottom: 5em;
 }
 
 .service-card {
@@ -469,7 +518,9 @@ nav {
     font-size: 1.2rem;
 }
 
-/* Contact page styles */
+/* ===================================
+   CONTACT PAGE COMPONENTS
+   =================================== */
 .contact-page {
     background: var(--color-bg-main);
     min-height: 100vh;
@@ -493,11 +544,13 @@ nav {
 }
 
 .contact-grid {
+    padding-top: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
     margin-bottom: 4rem;
 }
+
 .contact-card {
     background: var(--color-bg-card);
     padding: 2.5rem;
@@ -541,7 +594,9 @@ nav {
     font-weight: bold;
 }
 
-/* Contact Form Styles */
+/* ===================================
+   FORM COMPONENTS
+   =================================== */
 .contact-form-section {
     background: linear-gradient(135deg, var(--color-bg-service) 0%, var(--color-bg-service-end) 100%);
     padding: 80px 0;
@@ -559,6 +614,7 @@ nav {
     transform: translateY(0);
     transition: all 0.3s ease;
     border: 1px solid var(--color-border-light);
+    animation: fadeInUp 0.6s ease-out;
 }
 
 .form-container:hover {
@@ -626,6 +682,22 @@ nav {
     cursor: pointer;
 }
 
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--color-text-light);
+    font-style: italic;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* Checkbox Styling */
 .checkbox-group {
     display: flex;
     align-items: center;
@@ -654,6 +726,7 @@ nav {
     text-decoration: underline;
 }
 
+/* Submit Button */
 .submit-btn {
     width: 100%;
     padding: 16px;
@@ -695,37 +768,19 @@ nav {
     left: 100%;
 }
 
-.form-row {
-    display: flex;
-    gap: 15px;
-}
-
-.form-row .form-group {
-    flex: 1;
-}
-
 .required {
     color: var(--color-accent);
 }
 
-.form-input::placeholder,
-.form-textarea::placeholder {
-    color: var(--color-text-light);
-    font-style: italic;
-}
-
-/* ================================
-   PRICING PAGE STYLES (ENHANCED)
-   ================================ */
-
-/* Pricing page container */
+/* ===================================
+   PRICING PAGE COMPONENTS
+   =================================== */
 .pricing-page {
     background: var(--color-bg-main);
     min-height: 100vh;
     padding: 84px 0 80px 0;
 }
 
-/* Pricing Hero Section */
 .pricing-hero {
     text-align: center;
     padding: 60px 0;
@@ -809,7 +864,6 @@ nav {
     color: var(--color-text-primary);
 }
 
-/* Tab Content */
 .tab-content {
     display: none;
 }
@@ -826,7 +880,6 @@ nav {
     margin-bottom: 60px;
 }
 
-/* Service Package Cards */
 .service-package {
     background: var(--color-bg-card);
     border-radius: 20px;
@@ -911,6 +964,10 @@ nav {
     font-size: 1.1rem;
 }
 
+/* ===================================
+   TABLES & LISTS
+   =================================== */
+
 /* Additional Services Section */
 .additional-services {
     background: var(--color-bg-card);
@@ -931,7 +988,6 @@ nav {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Services Table */
 .services-table {
     width: 100%;
     border-collapse: collapse;
@@ -962,7 +1018,68 @@ nav {
     font-size: 1.1rem;
 }
 
-/* Calculator Section */
+/* Legacy Pricing Styles */
+.pricing-category {
+    margin-bottom: 4rem;
+    background: var(--color-bg-secondary);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--shadow-light);
+    border: 1px solid var(--color-border-light);
+}
+
+.pricing-category h2 {
+    color: var(--color-text-primary);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+}
+
+.pricing-table {
+    background: var(--color-bg-main);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px var(--shadow-light);
+    border: 1px solid var(--color-border-light);
+}
+
+.pricing-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-bottom: 1px solid var(--color-bg-secondary);
+    transition: all 0.3s ease;
+}
+
+.pricing-row:hover {
+    background: var(--color-bg-secondary);
+}
+
+.pricing-row:last-child {
+    border-bottom: none;
+}
+
+.pricing-service {
+    padding: 1.5rem 2rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+.pricing-price {
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    background: var(--overlay-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===================================
+   CALCULATOR COMPONENTS
+   =================================== */
 .calculator-section {
     background: var(--color-bg-card);
     border-radius: 20px;
@@ -1027,7 +1144,7 @@ nav {
     box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.1);
 }
 
-/* Checkbox Group for Calculator */
+/* Calculator Checkbox Group */
 .checkbox-group {
     display: flex;
     flex-wrap: wrap;
@@ -1105,67 +1222,11 @@ nav {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Legacy Pricing Styles (for backward compatibility) */
-.pricing-category {
-    margin-bottom: 4rem;
-    background: var(--color-bg-secondary);
-    padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px var(--shadow-light);
-    border: 1px solid var(--color-border-light);
-}
-
-.pricing-category h2 {
-    color: var(--color-text-primary);
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    position: relative;
-    font-weight: 600;
-}
-
-.pricing-table {
-    background: var(--color-bg-main);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px var(--shadow-light);
-    border: 1px solid var(--color-border-light);
-}
-
-.pricing-row {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    border-bottom: 1px solid var(--color-bg-secondary);
-    transition: all 0.3s ease;
-}
-
-.pricing-row:hover {
-    background: var(--color-bg-secondary);
-}
-
-.pricing-row:last-child {
-    border-bottom: none;
-}
-
-.pricing-service {
-    padding: 1.5rem 2rem;
-    font-weight: 500;
-    color: var(--color-text-primary);
-}
-
-.pricing-price {
-    padding: 1.5rem 2rem;
-    text-align: center;
-    font-weight: bold;
-    color: var(--color-text-primary);
-    background: var(--overlay-light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Enhanced Footer */
+/* ===================================
+   FOOTER SECTION
+   =================================== */
 footer {
+    padding: 4rem 0 2rem 2rem;
     background: linear-gradient(135deg, var(--color-primary-darker), var(--color-primary));
     color: var(--color-text-white);
     padding: 4rem 0 2rem 0;
@@ -1236,7 +1297,20 @@ footer {
     transform: translateY(-2px);
 }
 
-/* Animations */
+/* ===================================
+   ANIMATIONS & KEYFRAMES
+   =================================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
 @keyframes slideInDown {
     from {
         opacity: 0;
@@ -1260,8 +1334,12 @@ footer {
 }
 
 @keyframes floating {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 @keyframes fadeInUp {
@@ -1279,37 +1357,78 @@ footer {
     animation: floating 8s ease-in-out infinite;
 }
 
-.form-container {
-    animation: fadeInUp 0.6s ease-out;
+/* ===================================
+   UTILITY CLASSES
+   =================================== */
+.text-center {
+    text-align: center;
 }
 
-/* Button styles */
-.back-button {
-    display: inline-block;
-    background: linear-gradient(45deg, var(--color-primary), var(--color-primary-dark));
-    color: var(--color-text-white);
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 8px;
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.font-weight-bold {
     font-weight: 600;
-    transition: all 0.3s ease;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 15px var(--shadow-accent);
 }
 
-.back-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px var(--shadow-accent-hover);
-    background: linear-gradient(45deg, var(--color-primary-dark), var(--color-primary-darker));
+.color-primary {
+    color: var(--color-text-primary);
 }
 
-/* Mobile Responsive Design */
+.color-accent {
+    color: var(--color-accent);
+}
+
+/* ===================================
+   ACCESSIBILITY & FOCUS STATES
+   =================================== */
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus,
+.tab-button:focus,
+.cta-button:focus,
+.submit-btn:focus,
+.back-button:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN - MOBILE
+   =================================== */
 @media (max-width: 768px) {
+    /* Navigation */
     .nav-links {
+        position: absolute;
+        top: 90px;
+        right: 0;
+        background: #fff;
         flex-direction: column;
+        width: 200px;
+        border: 1px solid #ddd;
+        padding: 1rem;
+        display: none;
         gap: 1rem;
     }
 
+    .nav-links.show {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    /* Typography */
     .hero h1,
     .pricing-hero h1 {
         font-size: 2.5rem;
@@ -1328,6 +1447,11 @@ footer {
         font-size: 2rem;
     }
 
+    .form-title {
+        font-size: 1.8rem;
+    }
+
+    /* Grids */
     .main-services {
         grid-template-columns: 1fr;
     }
@@ -1344,20 +1468,18 @@ footer {
         text-align: left;
     }
 
-    .form-container {
-        padding: 30px 25px;
-        margin: 10px;
-    }
-
-    .form-title {
-        font-size: 1.8rem;
-    }
-
     .form-row {
         flex-direction: column;
         gap: 0;
     }
 
+    /* Form adjustments */
+    .form-container {
+        padding: 30px 25px;
+        margin: 10px;
+    }
+
+    /* Tables */
     .services-table {
         font-size: 0.9rem;
     }
@@ -1367,6 +1489,7 @@ footer {
         padding: 15px 10px;
     }
 
+    /* Pricing components */
     .tier {
         flex-direction: column;
         align-items: flex-start;
@@ -1397,48 +1520,9 @@ footer {
     }
 }
 
-/* Additional utility classes */
-.text-center {
-    text-align: center;
-}
-
-.mb-20 {
-    margin-bottom: 20px;
-}
-
-.mb-30 {
-    margin-bottom: 30px;
-}
-
-.mt-20 {
-    margin-top: 20px;
-}
-
-.font-weight-bold {
-    font-weight: 600;
-}
-
-.color-primary {
-    color: var(--color-text-primary);
-}
-
-.color-accent {
-    color: var(--color-accent);
-}
-
-/* Enhanced focus states for accessibility */
-.form-input:focus,
-.form-textarea:focus,
-.form-select:focus,
-.tab-button:focus,
-.cta-button:focus,
-.submit-btn:focus,
-.back-button:focus {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 2px;
-}
-
-/* Print styles */
+/* ===================================
+   PRINT STYLES
+   =================================== */
 @media print {
     .pricing-hero,
     .calculator-section,
@@ -1452,5 +1536,797 @@ footer {
     .form-container {
         box-shadow: none !important;
         border: 1px solid #ccc !important;
+    }
+
+    .nav-links,
+    .burger,
+    .cookie-banner,
+    .floating {
+        display: none !important;
+    }
+}
+
+
+
+/* ===================================
+PRICING NOTES SECTION
+=================================== */
+.pricing-notes {
+    background: var(--color-bg-card);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px var(--shadow-light);
+    padding: 40px;
+    margin-bottom: 60px;
+    border: 1px solid var(--color-border-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-notes::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.pricing-notes h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: var(--color-text-primary);
+    font-weight: 600;
+    position: relative;
+}
+
+.pricing-notes h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(45deg, var(--color-accent), var(--color-accent-dark));
+    border-radius: 2px;
+}
+
+/* Notes Grid */
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* Base Note Card Styles */
+.note-card {
+    background: var(--color-bg-main);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 25px var(--shadow-light);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.note-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px var(--shadow-medium);
+}
+
+/* Note Icon Styles */
+.note-icon {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    flex-shrink: 0;
+    background: var(--color-bg-secondary);
+    border: 2px solid var(--color-border-light);
+}
+
+/* Note Content */
+.note-content {
+    flex: 1;
+}
+
+.note-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--color-text-primary);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.note-content p {
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Discount Card Variants */
+.discount-card {
+    border-color: var(--color-accent);
+    background: linear-gradient(135deg, var(--color-bg-card) 0%, var(--color-bg-service) 100%);
+    position: relative;
+}
+
+.discount-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, var(--overlay-light), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.discount-card:hover::before {
+    opacity: 1;
+}
+
+.discount-card .note-icon {
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+    color: var(--color-text-white);
+    border-color: var(--color-accent);
+}
+
+.discount-card h4 {
+    color: var(--color-accent);
+}
+
+/* Info Card Variant */
+.info-card {
+    border-color: var(--color-border-medium);
+    background: linear-gradient(135deg, var(--color-bg-card) 0%, var(--color-bg-secondary) 100%);
+}
+
+.info-card .note-icon {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-text-white);
+    border-color: var(--color-primary);
+}
+
+.info-card h4 {
+    color: var(--color-primary);
+}
+
+/* Warning Card Variant */
+.warning-card {
+    border-color: #ff9800;
+    background: linear-gradient(135deg, var(--color-bg-card) 0%, #fff8e1 100%);
+}
+
+.warning-card .note-icon {
+    background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+    color: var(--color-text-white);
+    border-color: #ff9800;
+}
+
+.warning-card h4 {
+    color: #f57c00;
+}
+
+/* Badge Styles */
+.discount-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+    color: var(--color-text-white);
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px var(--shadow-accent);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.fee-amount {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+    color: var(--color-text-white);
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+}
+
+/* Hover Effects */
+.discount-card:hover {
+    border-color: var(--color-accent-dark);
+    background: linear-gradient(135deg, var(--color-bg-service) 0%, var(--color-bg-service-end) 100%);
+}
+
+.info-card:hover {
+    border-color: var(--color-primary);
+    background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-tertiary) 100%);
+}
+
+.warning-card:hover {
+    border-color: #f57c00;
+    background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-notes {
+        padding: 30px 25px;
+    }
+
+    .pricing-notes h3 {
+        font-size: 1.8rem;
+    }
+
+    .notes-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .note-card {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .note-icon {
+        align-self: center;
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+
+    .discount-badge {
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .fee-amount {
+        align-self: center;
+    }
+}
+
+/* ===================================
+   CALCULATOR SECTION - RESPONSIVE
+   =================================== */
+
+.calculator-section {
+    background: var(--color-bg-card);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px var(--shadow-light);
+    padding: 40px;
+    margin-bottom: 60px;
+    border: 1px solid var(--color-border-light);
+}
+
+.calculator-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.calculator-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+.calculator-header p {
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+}
+
+/* Desktop Layout - Two Columns */
+.calculator-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Inputs Section */
+.calculator-inputs {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--color-border-light);
+}
+
+.calculator-inputs .form-group {
+    margin-bottom: 25px;
+}
+
+.calculator-inputs .form-group:last-child {
+    margin-bottom: 0;
+}
+
+.calculator-inputs label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.calculator-inputs select,
+.calculator-inputs input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid var(--color-border-light);
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background: var(--color-bg-main);
+    color: var(--color-text-primary);
+}
+
+.calculator-inputs select:focus,
+.calculator-inputs input:focus {
+    outline: none;
+    border-color: var(--color-border-focus);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    background: var(--color-bg-secondary);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid var(--color-border-light);
+}
+
+.checkbox-item:hover {
+    background: var(--color-bg-service);
+    border-color: var(--color-border-focus);
+    transform: translateY(-1px);
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: auto;
+    min-width: 18px;
+    height: 18px;
+    accent-color: var(--color-accent);
+    cursor: pointer;
+}
+
+.checkbox-item label {
+    margin: 0;
+    font-size: 0.95rem;
+    text-transform: none;
+    letter-spacing: normal;
+    cursor: pointer;
+    flex: 1;
+}
+
+/* Result Section */
+.calculator-result {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-text-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-elevated);
+    border: 1px solid var(--color-border-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    position: sticky;
+    top: 90px;
+    transition: all 0.3s ease;
+}
+
+.result-title {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    color: var(--color-text-white);
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid var(--white-overlay);
+    padding-bottom: var(--space-sm);
+}
+
+.result-breakdown {
+    flex-grow: 1;
+    margin-bottom: var(--space-md);
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-xs);
+    padding: var(--space-xs) 0;
+    border-bottom: 1px solid var(--white-overlay);
+    font-size: var(--font-size-sm);
+    transition: all 0.2s ease;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.result-item:hover {
+    background: var(--white-overlay);
+    padding-left: var(--space-xs);
+    border-radius: var(--radius-sm);
+}
+
+.result-item span:first-child {
+    flex: 1;
+    opacity: 0.9;
+}
+
+.result-item span:last-child {
+    font-weight: 600;
+    font-size: var(--font-size-base);
+}
+
+.result-footer {
+    margin-top: auto;
+    text-align: center;
+    padding-top: var(--space-md);
+    border-top: 2px solid var(--white-overlay-hover);
+}
+
+.result-total {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--color-text-white);
+    margin-bottom: var(--space-md);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: var(--white-overlay);
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+}
+
+.result-note {
+    font-size: var(--font-size-xs);
+    margin-top: var(--space-sm);
+    opacity: 0.8;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+.result-footer .btn {
+    width: 100%;
+    background: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    color: var(--color-text-white);
+    font-weight: 600;
+    padding: 14px 24px;
+    transition: all 0.3s ease;
+}
+
+.result-footer .btn:hover {
+    background: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-floating);
+}
+
+/* ===================================
+   RESPONSIVE DESIGN - CALCULATOR
+   =================================== */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .calculator-section {
+        padding: 30px;
+    }
+
+    .calculator-header h2 {
+        font-size: 2rem;
+    }
+
+    .calculator-form {
+        gap: 30px;
+    }
+
+    .calculator-result {
+        position: static;
+        min-height: auto;
+    }
+}
+
+/* Mobile (max 768px) */
+@media (max-width: 768px) {
+    .calculator-section {
+        padding: 25px 20px;
+        margin-bottom: 40px;
+    }
+
+    .calculator-header {
+        margin-bottom: 30px;
+    }
+
+    .calculator-header h2 {
+        font-size: 1.75rem;
+        margin-bottom: 10px;
+    }
+
+    .calculator-header p {
+        font-size: 1rem;
+    }
+
+    /* Single Column Layout */
+    .calculator-form {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .calculator-inputs,
+    .calculator-result {
+        padding: var(--space-md);
+    }
+
+    .calculator-inputs .form-group {
+        margin-bottom: 20px;
+    }
+
+    .calculator-inputs select,
+    .calculator-inputs input {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    .checkbox-item {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .checkbox-item label {
+        font-size: 0.9rem;
+    }
+
+    /* Result Section Mobile */
+    .calculator-result {
+        position: static;
+        margin-top: 0;
+        min-height: auto;
+    }
+
+    .result-title {
+        font-size: var(--font-size-lg);
+        padding-bottom: 10px;
+    }
+
+    .result-item {
+        font-size: 0.85rem;
+        padding: 8px 0;
+    }
+
+    .result-item span:last-child {
+        font-size: 0.9rem;
+    }
+
+    .result-total {
+        font-size: var(--font-size-xl);
+        padding: 12px;
+    }
+
+    .result-note {
+        font-size: 0.8rem;
+    }
+
+    .result-footer .btn {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Small Mobile (max 480px) */
+@media (max-width: 480px) {
+    .calculator-section {
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+
+    .calculator-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .calculator-header p {
+        font-size: 0.9rem;
+    }
+
+    .calculator-form {
+        gap: 20px;
+    }
+
+    .calculator-inputs,
+    .calculator-result {
+        padding: var(--space-sm);
+    }
+
+    .calculator-inputs label {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+    }
+
+    .calculator-inputs select,
+    .calculator-inputs input {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .checkbox-group {
+        gap: 10px;
+    }
+
+    .checkbox-item {
+        padding: 8px 10px;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .checkbox-item input[type="checkbox"] {
+        margin-top: 2px;
+        min-width: 16px;
+        height: 16px;
+    }
+
+    .checkbox-item label {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .result-title {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .result-breakdown {
+        margin-bottom: 15px;
+    }
+
+    .result-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        padding: 10px 0;
+        font-size: 0.8rem;
+    }
+
+    .result-item span:last-child {
+        align-self: flex-end;
+        font-weight: 700;
+        font-size: 0.95rem;
+    }
+
+    .result-footer {
+        padding-top: 15px;
+    }
+
+    .result-total {
+        font-size: 1.25rem;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .result-note {
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
+
+    .result-footer .btn {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Very Small Mobile (max 360px) */
+@media (max-width: 360px) {
+    .calculator-section {
+        padding: 15px 10px;
+    }
+
+    .calculator-header h2 {
+        font-size: 1.35rem;
+    }
+
+    .calculator-inputs select,
+    .calculator-inputs input {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .checkbox-item {
+        padding: 6px 8px;
+    }
+
+    .checkbox-item label {
+        font-size: 0.8rem;
+    }
+
+    .result-title {
+        font-size: 0.95rem;
+    }
+
+    .result-item {
+        font-size: 0.75rem;
+    }
+
+    .result-total {
+        font-size: 1.1rem;
+    }
+}
+
+/* Landscape Mode for Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .calculator-result {
+        position: static;
+        min-height: auto;
+    }
+
+    .calculator-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: more) {
+    .calculator-inputs,
+    .calculator-result {
+        border: 2px solid var(--color-text-primary);
+    }
+
+    .checkbox-item {
+        border: 2px solid var(--color-border-medium);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .calculator-section {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+
+    .calculator-result {
+        background: #fff;
+        color: #000;
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+
+    .result-footer .btn {
+        display: none;
     }
 }

@@ -1,50 +1,4 @@
-// Инициализация EmailJS (замените на ваш Public Key)
-emailjs.init('BhGIV5pyEcpw0oLtL');
 
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const btn = document.querySelector('.submit-btn');
-    const originalText = btn.textContent;
-
-    btn.textContent = 'Отправляется...';
-    btn.disabled = true;
-
-    // Собираем данные формы
-    const templateParams = {
-        from_name: this.firstName.value + ' ' + this.lastName.value,
-        from_email: this.email.value,
-        phone: this.phone.value,
-        subject: this.subject.value,
-        message: this.message.value,
-        to_email: 'levkovichkate64@gmail.com' // Ваша почта
-    };
-
-    // Отправляем письмо через EmailJS
-    emailjs.send('service_91u4oyn', 'template_fzo00y8', templateParams)
-        .then(() => {
-            btn.textContent = 'Отправлено!';
-            btn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
-
-            setTimeout(() => {
-                btn.textContent = originalText;
-                btn.disabled = false;
-                btn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-                this.reset();
-            }, 2000);
-        })
-        .catch((error) => {
-            console.error('Ошибка:', error);
-            btn.textContent = 'Ошибка отправки';
-            btn.style.background = 'linear-gradient(135deg, #e74c3c, #c0392b)';
-
-            setTimeout(() => {
-                btn.textContent = originalText;
-                btn.disabled = false;
-                btn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-            }, 3000);
-        });
-});
 
 // Добавляем интерактивность к полям
 const inputs = document.querySelectorAll('.form-input, .form-textarea, .form-select');
@@ -58,7 +12,7 @@ inputs.forEach(input => {
     });
 });
 
-// Navigation and page switching
+//Navigation and page switching
 function showPage(pageId) {
     // Hide all pages
     const pages = document.querySelectorAll('.page');
@@ -146,47 +100,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-const translations = {
-    pl: {
-        title: "VISTEK SP. Z O.O.",
-        description: "Twoje nowoczesne i niezawodne biuro rachunkowe.",
-        cta: "Skontaktuj się z nami"
-    },
-    en: {
-        title: "VISTEK LTD",
-        description: "Your modern and reliable accounting office.",
-        cta: "Contact Us"
-    },
-    ru: {
-        title: "VISTEK ООО",
-        description: "Ваш современный и надежный бухгалтерский офис.",
-        cta: "Связаться с нами"
-    }
-};
-
-
-function setLanguage(lang) {
-    const elements = document.querySelectorAll("[data-translate]");
-
-    elements.forEach(el => {
-        const key = el.getAttribute("data-translate");
-        el.textContent = translations[lang][key];
-    });
-
-    // Сохраняем язык в localStorage, чтобы сайт помнил выбор
-    localStorage.setItem("siteLanguage", lang);
-}
-
-// При загрузке страницы выбираем язык из localStorage или ставим по умолчанию
-document.addEventListener("DOMContentLoaded", () => {
-    const savedLang = localStorage.getItem("siteLanguage") || "pl";
-    setLanguage(savedLang);
-});
-
 function toggleMenu() {
     document.querySelector(".nav-links").classList.toggle("show");
 }
-
 
 
 
