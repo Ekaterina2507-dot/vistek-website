@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISTEK SP. Z O.O. - Twoje nowoczesne biuro rachunkowe</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ======= АДАПТИВ ======= */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* скрыто по умолчанию */
+            }
+        }
+    </style>
+
+</head>
+<body>
+<header>
+    <nav class="container">
+        <div class="logo">
+            <img src="logo.png" alt="logo" class="logo-img">
+            VISTEK
+        </div>
+
+        <!-- Бургер -->
+        <div class="burger" onclick="toggleMenu()">☰</div>
+
+        <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home')" class="nav-link active">Strona główna</a></li>
+            <li><a href="#" onclick="showPage('about')" class="nav-link">O nas</a></li>
+            <li><a href="#" onclick="showPage('services')" class="nav-link">Usługi</a></li>
+            <li><a href="#" onclick="showPage('pricing')" class="nav-link">Cennik</a></li>
+            <li><a href="#" onclick="showPage('contact')" class="nav-link">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<!-- HOME PAGE -->
+<div id="home" class="page active">
+    <section class="hero">
+        <div class="container">
+            <h1 class="floating">VISTEK SP. Z O.O.</h1>
+            <p>Twoje nowoczesne i niezawodne biuro rachunkowe. Nasz doświadczony zespół księgowych gwarantuje profesjonalizm i indywidualne podejście do każdego klienta.</p>
+            <a href="#" onclick="showPage('contact')" class="cta-button">Skontaktuj się z nami</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Misja i wartości, które nas prowadzą</h2>
+            <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto 3rem; color: #666;">
+                Naszą misją jest dostarczanie rzetelnego i bezpiecznego wsparcia finansowego, które pozwala przedsiębiorcom skoncentrować się na rozwoju swojej firmy bez obaw o kwestie księgowe i kadrowe.
+            </p>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>🎯 Profesjonalizm i etyka zawodowa</h3>
+                    <p>Fundament naszej działalności oparty na najwyższych standardach branżowych.</p>
+                </div>
+                <div class="value-card">
+                    <h3>📋 Dbałość o zgodność z przepisami</h3>
+                    <p>Zawsze na bieżąco z regulacjami i zmianami w prawie.</p>
+                </div>
+                <div class="value-card">
+                    <h3>🔒 Dyskrecja i ochrona danych</h3>
+                    <p>Zapewniamy pełną poufność zgodną z RODO.</p>
+                </div>
+                <div class="value-card">
+                    <h3>⏰ Terminowość i precyzja</h3>
+                    <p>Dokładność, na której możesz polegać.</p>
+                </div>
+                <div class="value-card">
+                    <h3>🤝 Elastyczne podejście</h3>
+                    <p>Dostosowujemy się do indywidualnych potrzeb klienta.</p>
+                </div>
+                <div class="value-card">
+                    <h3>🌍 Obsługa w całej Polsce</h3>
+                    <p>Wygodna współpraca bez względu na lokalizację.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Kompleksowy zakres usług dla przedsiębiorców</h2>
+            <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto 3rem; color: #666;">
+                Oferujemy pełen wachlarz usług dostosowanych do różnorodnych potrzeb biznesowych.
+            </p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>📊 Usługi księgowe</h3>
+                    <ul>
+                        <li>Prowadzenie pełnej księgowości</li>
+                        <li>Księga Przychodów i Rozchodów (KPiR)</li>
+                        <li>Rozliczenia ryczałtu ewidencjonowanego</li>
+                        <li>Roczne sprawozdania finansowe</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>💰 Podatki</h3>
+                    <ul>
+                        <li>Przygotowywanie deklaracji CIT, PIT, VAT</li>
+                        <li>Reprezentacja przed Urzędem Skarbowym</li>
+                        <li>Bieżący kontakt z urzędami</li>
+                        <li>Optymalizacja podatkowa</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>👥 Kadry i płace</h3>
+                    <ul>
+                        <li>Obsługa list płac</li>
+                        <li>Umowy i składki ZUS</li>
+                        <li>Dokumentacja kadrowa</li>
+                        <li>Przygotowanie i wysyłka deklaracji ZUS DRA</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>🚀 Dla nowych firm</h3>
+                    <ul>
+                        <li>Wsparcie w zakładaniu działalności</li>
+                        <li>Dobór optymalnej formy prawnej</li>
+                        <li>Wybór najkorzystniejszej formy podatkowej</li>
+                        <li>Kompleksowe doradztwo na start</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Dlaczego warto nam zaufać?</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>🏢 Szeroki zakres obsługi</h3>
+                    <p>Obsługujemy różne podmioty: jednoosobowe działalności, spółki, fundacje i stowarzyszenia.</p>
+                </div>
+                <div class="value-card">
+                    <h3>🔐 Bezpieczeństwo danych</h3>
+                    <p>Gwarantujemy pełną poufność i bezpieczeństwo przechowywanych danych.</p>
+                </div>
+                <div class="value-card">
+                    <h3>⚡ Szybkość i elastyczność</h3>
+                    <p>Działamy szybko, elastycznie, ograniczając niepotrzebną biurokrację.</p>
+                </div>
+                <div class="value-card">
+                    <h3>💎 Konkurencyjne ceny</h3>
+                    <p>Proponujemy jasne zasady współpracy i konkurencyjne ceny dostosowane do klienta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- CONTACT PAGE -->
+<div id="contact" class="page contact-page">
+    <div class="container" style="margin-bottom: 2rem;">
+        <div class="contact-hero">
+            <h1 style="font-size: 2.5em">Kontakt</h1>
+            <p style="font-size: 1.2rem; color: #ffffff; max-width: 600px; margin: 0 auto; opacity: 0.9;">
+                Jesteśmy gotowi na współpracę z Tobą. Chętnie odpowiemy na wszystkie pytania i przygotujemy ofertę dopasowaną do Twoich potrzeb.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="anna-photo">AL</div>
+                <h3>👤 Kontakt bezpośredni</h3>
+                <p><strong>Anna Levkovich</strong></p>
+                <p><strong>✉️ +48 451 270 218</strong></p>
+                <p><strong>✉️ pl.vistek@gmail.com</strong></p>
+                <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">
+                    Jestem dostępna od poniedziałku do soboty w godzinach 9:00-17:00.
+                    Chętnie odpowiem na wszystkie Twoje pytania i pomogę wybrać najlepsze rozwiązania dla Twojej firmy.
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <span class="icon">🏛️</span>
+                <h3>Dane firmy</h3>
+                <p><strong>VISTEK SP. Z O.O.</strong></p>
+                <div style="margin: 1.5rem 0; text-align: left;">
+                    <p><strong>NIP:</strong> 9662209608</p>
+                    <p><strong>REGON:</strong> 542377535</p>
+                    <p><strong>KRS:</strong> 0001187024</p>
+                </div>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 1rem;">
+                    Spółka z ograniczoną odpowiedzialnością wpisana do Krajowego Rejestru Sądowego.
+                    Pełna zgodność z obowiązującym prawem i standardami branżowymi.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div id="form" class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="form-title">Napisz do nas</h2>
+                <p class="form-subtitle">Odpowiemy w ciągu 24 godzin</p>
+
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName" class="form-label">Imię <span class="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Twoje imię" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="form-label">Nazwisko <span class="required">*</span></label>
+                            <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Twoje nazwisko" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="przykład@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Telefon</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="+48 123 456 789">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Temat zapytania <span class="required">*</span></label>
+                        <select id="subject" name="subject" class="form-select" required>
+                            <option value="">Wybierz temat</option>
+                            <option value="ksiegowosc">Usługi księgowe</option>
+                            <option value="kadry">Kadry i płace</option>
+                            <option value="rejestracja">Rejestracja firmy</option>
+                            <option value="doradztwo">Doradztwo podatkowe</option>
+                            <option value="cennik">Pytania o cennik</option>
+                            <option value="inne">Inne</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Wiadomość <span class="required">*</span></label>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Opisz szczegółowo swoje pytanie lub potrzeby..." required></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="privacy" name="privacy" class="checkbox-input" required>
+                        <label for="privacy" class="checkbox-label">
+                            Zgadzam się na przetwarzanie moich danych osobowych zgodnie z polityką prywatności <span class="required">*</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Wyślij wiadomość</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PRICING PAGE -->
+<div id="pricing" class="page pricing-page">
+    <div class="container" style="margin-bottom: 2rem;">
+        <div class="contact-hero">
+            <h1 style="font-size: 2.5em" >💰 Cennik i Kalkulatory</h1>
+            <p style="font-size: 1.2rem; color: #ffffff; max-width: 600px; margin: 0 auto; opacity: 0.9;" >Przejrzyste ceny i narzędzia do wyliczenia kosztów obsługi Twojej firmy</p>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <!-- Tab Navigation -->
+        <div class="pricing-tabs">
+            <button class="tab-button active" onclick="switchTab('main-services')">
+                📊 Główne Usługi
+            </button>
+            <button class="tab-button" onclick="switchTab('additional')">
+                🛠️ Usługi Dodatkowe
+            </button>
+            <button class="tab-button" onclick="switchTab('calculator')">
+                🧮 Kalkulator
+            </button>
+        </div>
+
+        <!-- Main Services Tab -->
+        <div id="main-services" class="tab-content active">
+            <div class="main-services">
+                <!-- Księgowość JDG -->
+                <div class="service-package">
+                    <h3>📋 Księga Przychodów i Rozchodów</h3>
+                    <p class="description">Dla indywidualnej działalności gospodarczej (JDG)</p>
+
+                    <div class="package-tiers">
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Bez aktywności</div>
+                                <div class="tier-range">Brak dokumentów</div>
+                            </div>
+                            <div class="tier-price">100 zł/mies.</div>
+                        </div>
+
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Pakiet Mini</div>
+                                <div class="tier-range">Do 10 dokumentów</div>
+                            </div>
+                            <div class="tier-price">280 zł/mies.</div>
+                        </div>
+
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Pakiet Midi</div>
+                                <div class="tier-range">11-30 dokumentów</div>
+                            </div>
+                            <div class="tier-price">380 zł/mies.</div>
+                        </div>
+
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Pakiet Midi Plus</div>
+                                <div class="tier-range">31-50 dokumentów</div>
+                            </div>
+                            <div class="tier-price">480 zł/mies.</div>
+                        </div>
+
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Pakiet Maxi</div>
+                                <div class="tier-range">51-100 dokumentów</div>
+                            </div>
+                            <div class="tier-price">580 zł/mies.</div>
+                        </div>
+
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Pakiet Maxi Plus</div>
+                                <div class="tier-range">Powyżej 100 dokumentów</div>
+                            </div>
+                            <div class="tier-price">Wycena indywidualna</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pełna księgowość -->
+                <div class="service-package">
+                    <h3>📊 Pełna Księgowość</h3>
+                    <p class="description">Dla spółek z ograniczoną odpowiedzialnością</p>
+
+                    <div class="package-tiers">
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Bez aktywności</div>
+                                <div class="tier-range">Brak dokumentów</div>
+                            </div>
+                            <div class="tier-price">400 zł/mies.</div>
+                        </div>
+
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Pakiet Mini</div>
+                                <div class="tier-range">Do 20 dokumentów</div>
+                            </div>
+                            <div class="tier-price">700 zł/mies.</div>
+                        </div>
+
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Pakiet Midi</div>
+                                <div class="tier-range">21-50 dokumentów</div>
+                            </div>
+                            <div class="tier-price">1 000 zł/mies.</div>
+                        </div>
+
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Pakiet Maxi</div>
+                                <div class="tier-range">51-100 dokumentów</div>
+                            </div>
+                            <div class="tier-price">1 500 zł/mies.</div>
+                        </div>
+
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Pakiet Maxi Plus</div>
+                                <div class="tier-range">Powyżej 100 dokumentów</div>
+                            </div>
+                            <div class="tier-price">Wycena indywidualna</div>
+                        </div>
+
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Roczne sprawozdanie</div>
+                                <div class="tier-range">Bilans finansowy</div>
+                            </div>
+                            <div class="tier-price">Średnia miesięczna płatność</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kadry i płace -->
+                <div class="service-package">
+                    <h3>👥 Kadry i Płace</h3>
+                    <p class="description">Obsługa kadrowo-płacowa pracowników</p>
+
+                    <div class="package-tiers">
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Rozliczenie 1 pracownika</div>
+                                <div class="tier-range">Miesięczne rozliczenie</div>
+                            </div>
+                            <div class="tier-price">80 zł/mies.</div>
+                        </div>
+
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Zgłoszenie przyjęcia/zwolnienia</div>
+                                <div class="tier-range">Komplet dokumentów + ZUS</div>
+                            </div>
+                            <div class="tier-price">80 zł</div>
+                        </div>
+
+                        <div class="tier">
+                            <div>
+                                <div class="tier-name">Dodatkowe dokumenty</div>
+                                <div class="tier-range">Za każdy dokument</div>
+                            </div>
+                            <div class="tier-price">50-100 zł</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Services Tab -->
+        <div id="additional" class="tab-content">
+            <div class="additional-services">
+                <h2>🛠️ Usługi Dodatkowe</h2>
+                <table class="services-table">
+                    <thead>
+                    <tr>
+                        <th>Usługa</th>
+                        <th>Opis</th>
+                        <th class="price">Cena</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong>Rejestracja Sp. z o.o.</strong></td>
+                        <td>Kompletna rejestracja spółki w KRS, CRBR, PCC-3, NIP-8</td>
+                        <td class="price">2000 zł</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rejestracja JDG</strong></td>
+                        <td>Założenie indywidualnej działalności gospodarczej</td>
+                        <td class="price">od 300 zł</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Uzyskanie PESEL + Profil zaufany</strong></td>
+                        <td>Konsultacja i przygotowanie dokumentów</td>
+                        <td class="price">300 zł</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Zmiana danych w KRS</strong></td>
+                        <td>Dla klientów z abonamentem księgowym</td>
+                        <td class="price">od 700 zł</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Zmiana danych w KRS</strong></td>
+                        <td>Standardowa zmiana danych przedsiębiorstwa</td>
+                        <td class="price">od 1000 zł</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Aktualizacja danych NIP-8</strong></td>
+                        <td>Zmiana danych w urzędzie skarbowym</td>
+                        <td class="price">100 zł</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rejestracja VAT (VAT-R, VIU-R)</strong></td>
+                        <td>Złożenie wniosku o rejestrację jako podatnik VAT</td>
+                        <td class="price">300 zł</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pisemne upomnienia</strong></td>
+                        <td>O zaległościach finansowych</td>
+                        <td class="price">10 zł/szt</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Korekta deklaracji</strong></td>
+                        <td>Miesięczna opłata za rozliczenie</td>
+                        <td class="price">80 zł</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sporządzanie polityki rachunkowości</strong></td>
+                        <td>Dla pełnej księgowości</td>
+                        <td class="price">1 000 zł</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Calculator Tab -->
+        <div id="calculator" class="tab-content">
+            <div class="calculator-section">
+                <div class="calculator-header">
+                    <h2>🧮 Kalkulator Kosztów</h2>
+                    <p>Oblicz szacunkowe koszty obsługi księgowej i kadrowej dla Twojej firmy</p>
+                </div>
+
+                <div class="calculator-form">
+                    <div class="calculator-inputs">
+                        <div class="form-group">
+                            <label for="business-type">Typ działalności:</label>
+                            <select id="business-type" onchange="updateCalculator()">
+                                <option value="">Wybierz typ działalności</option>
+                                <option value="jdg">Jednoosobowa działalność gospodarcza (JDG)</option>
+                                <option value="spzoo">Spółka z ograniczoną odpowiedzialnością (Sp. z o.o.)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="documents-count">Ilość dokumentów miesięcznie:</label>
+                            <input type="number" id="documents-count" placeholder="np. 25" min="0" onchange="updateCalculator()">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="employees-count">Ilość pracowników:</label>
+                            <input type="number" id="employees-count" placeholder="np. 3" min="0" onchange="updateCalculator()">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Usługi dodatkowe:</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="vat-reg" value="300" onchange="updateCalculator()">
+                                    <label for="vat-reg">Rejestracja VAT (300 zł)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="annual-report" value="400" onchange="updateCalculator()">
+                                    <label for="annual-report">Sprawozdanie roczne (400 zł)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="accounting-policy" value="1000" onchange="updateCalculator()">
+                                    <label for="accounting-policy">Polityka rachunkowości (1000 zł)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="company-registration" value="2000" onchange="updateCalculator()">
+                                    <label for="company-registration">Rejestracja Sp. z o.o. (2000 zł)</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator-result">
+                        <h3 class="result-title">📊 Szacunkowe koszty</h3>
+
+                        <div class="result-breakdown" id="cost-breakdown">
+                            <div class="result-item">
+                                <span>Wybierz typ działalności</span>
+                                <span>-</span>
+                            </div>
+                        </div>
+
+                        <div class="result-total" id="total-cost">
+                            0 zł / miesiąc
+                        </div>
+                        <a href="#form" onclick="showPage('contact')" class="cta-button">💬 Skontaktuj się z nami</a>
+
+                        <p style="font-size: 0.9rem; margin-top: 20px; opacity: 0.8;">
+                            * Podane ceny są orientacyjne. Dokładna wycena zostanie przygotowana po konsultacji.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <div class="contact-card" style="max-width: 700px; margin: 0 auto;">
+                <span class="icon">💡</span>
+                <h3>Potrzebujesz indywidualnej wyceny?</h3>
+                <p style="margin-bottom: 1.5rem;">
+                    Każda firma ma swoje unikalne potrzeby. Skontaktuj się z nami, aby otrzymać
+                    spersonalizowaną ofertę dostosowaną do specyfiki Twojej działalności.
+                </p>
+                <a href="#form" onclick="showPage('contact')" class="cta-button">💬 Skontaktuj się z nami</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT PAGE -->
+<div id="about" class="page">
+    <section style="padding: 60px 0; background: white;">
+        <div class="container">
+            <div class="contact-hero">
+                <h1 style="font-size: 2em">O nas</h1>
+                <p style="font-size: 1.2rem; color: #ffffff; max-width: 800px; margin: 0 auto; opacity: 0.9;">
+                    Poznaj naszą historię, zespół i podejście do prowadzenia biznesu.
+                </p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>🎯 Nasza misja</h3>
+                    <p>Dostarczanie rzetelnego i bezpiecznego wsparcia finansowego, które pozwala przedsiębiorcom skoncentrować się na rozwoju swojej firmy bez obaw o kwestie księgowe i kadrowe.</p>
+                </div>
+                <div class="value-card">
+                    <h3>👁️ Nasza wizja</h3>
+                    <p>Być najbardziej zaufanym partnerem biznesowym dla małych i średnich przedsiębiorstw w Polsce, oferując nowoczesne rozwiązania księgowe i kadrowe.</p>
+                </div>
+                <div class="value-card">
+                    <h3>⭐ Nasze wartości</h3>
+                    <p>Profesjonalizm, rzetelność, dyskrecja, terminowość oraz indywidualne podejście do każdego klienta to podstawa naszego działania.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <h2 style="margin-bottom: 2rem;">Dlaczego VISTEK?</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>🏆 Doświadczenie</h3>
+                        <p>Wieloletnie doświadczenie w branży księgowej i kadrowej. Znamy wszystkie zawiłości przepisów i regularnie podnosimy swoje kwalifikacje.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>🔒 Bezpieczeństwo</h3>
+                        <p>Gwarantujemy pełną poufność i bezpieczeństwo Twoich danych zgodnie z RODO. Używamy nowoczesnych systemów zabezpieczeń.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>⚡ Nowoczesność</h3>
+                        <p>Wykorzystujemy najnowsze technologie i oprogramowanie księgowe, co przekłada się na szybkość i precyzję naszych usług.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>🤝 Partnerstwo</h3>
+                        <p>Nie jesteśmy tylko dostawcą usług - jesteśmy Twoim partnerem biznesowym, który dba o rozwój Twojej firmy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- SERVICES PAGE -->
+<div id="services" class="page">
+    <section style="padding: 60px 0; background: white;">
+        <div class="container">
+            <div class="contact-hero">
+                <h1 style="font-size: 2.5em">Nasze usługi</h1>
+                <p style="font-size: 1.2rem; color: #ffffff; max-width: 800px; margin: 0 auto; opacity: 0.9;">
+                    Kompleksowa obsługa księgowa, kadrowa i podatkowa dla Twojej firmy.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>📊 Pełna księgowość</h3>
+                    <ul>
+                        <li>Prowadzenie ksiąg rachunkowych</li>
+                        <li>Sporządzanie sprawozdań finansowych</li>
+                        <li>Inwentaryzacja majątku</li>
+                        <li>Wycena bilansowa</li>
+                        <li>Polityka rachunkowości</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>📋 Księga przychodów i rozchodów</h3>
+                    <ul>
+                        <li>Ewidencja przychodów i kosztów</li>
+                        <li>Rejestry VAT</li>
+                        <li>Środki trwałe i wykaz</li>
+                        <li>Rozliczenia z kontrahentami</li>
+                        <li>Sprawozdania i deklaracje</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>💰 Obsługa podatkowa</h3>
+                    <ul>
+                        <li>Deklaracje VAT, CIT, PIT</li>
+                        <li>Optymalizacja podatkowa</li>
+                        <li>Reprezentacja przed urzędami</li>
+                        <li>Doradztwo podatkowe</li>
+                        <li>Obsługa kontroli skarbowych</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>👥 Kadry i płace</h3>
+                    <ul>
+                        <li>Naliczanie wynagrodzeń</li>
+                        <li>Obsługa ZUS i NFZ</li>
+                        <li>Dokumentacja kadrowa</li>
+                        <li>Umowy o pracę i zlecenia</li>
+                        <li>Świadczenia pracownicze</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>🚀 Start-up i nowe firmy</h3>
+                    <ul>
+                        <li>Rejestracja działalności</li>
+                        <li>Wybór formy opodatkowania</li>
+                        <li>Założenie spółki</li>
+                        <li>Konsultacje prawne</li>
+                        <li>Wsparcie na początku działalności</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>🔧 Usługi dodatkowe</h3>
+                    <ul>
+                        <li>Faktoring i windykacja</li>
+                        <li>Analizy finansowe</li>
+                        <li>Wyceny przedsiębiorstw</li>
+                        <li>Due diligence</li>
+                        <li>Wsparcie w procesach M&A</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="#" onclick="showPage('pricing')" class="cta-button">💰 Sprawdź cennik</a>
+                <a href="#" onclick="showPage('contact form')" class="cta-button">📞 Skontaktuj się</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ENHANCED FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>VISTEK SP. Z O.O.</h3>
+                <p>Twoje nowoczesne biuro rachunkowe</p>
+                <p>Profesjonalna obsługa księgowa, kadrowa i podatkowa dla firm w całej Polsce.</p>
+                <div class="social-links">
+                    <div class="social-link">📧</div>
+                    <div class="social-link">📧</div>
+                    <div class="social-link">📍</div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Nasze usługi</h3>
+                <ul>
+                    <li><a href="#" onclick="showPage('services')">Pełna księgowość</a></li>
+                    <li><a href="#" onclick="showPage('services')">Kadry i płace</a></li>
+                    <li><a href="#" onclick="showPage('services')">Obsługa podatkowa</a></li>
+                    <li><a href="#" onclick="showPage('services')">Rejestracja firm</a></li>
+                    <li><a href="#" onclick="showPage('pricing')">Cennik usług</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>15-063 Białystok</p>
+                <p>✉️ pl.vistek@gmail.com</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                    Godziny pracy: Pn-Sb 9:00-17:00
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Informacje prawne</h3>
+                <ul>
+                    <li>NIP: 9662209608</li>
+                    <li>REGON: 542377535</li>
+                    <li>KRS: 0001187024</li>
+                </ul>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                    Spółka z ograniczoną odpowiedzialnością wpisana do Krajowego Rejestru Sądowego.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 VISTEK SP. Z O.O. Wszystkie prawa zastrzeżone.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.7;">
+                Projektowanie i obsługa strony: VISTEK Web Solutions
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- ==== Cookie Banner HTML ==== -->
+<div id="cookie-banner">
+    <h2>Dbamy o Twoje cookie 🍪</h2>
+    <p>
+        Nasza strona korzysta z plików cookie w celu poprawy jakości usług i doświadczeń użytkownika.
+        Klikając „Przyjmij” wyrażasz zgodę na ich użycie zgodnie z
+        <a href="https://www.freeprivacypolicy.com/live/01aecf20-b227-46f7-b3c9-138a34f74b7d">Polityką cookies</a>.
+    </p>
+    <div class="cookie-buttons">
+        <button class="decline" id="decline-cookies">Odrzuć</button>
+        <button class="accept" id="accept-cookies">Przyjmij</button>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script src="index.js"></script>
+
+<!-- Scripts -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="index.js"></script>
+
+<script>
+    // ==== Cookie functions ====
+    function setCookie(name, value, days) {
+        const d = new Date();
+        d.setTime(d.getTime() + (days*24*60*60*1000));
+        const expires = "expires=" + d.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+    function getCookie(name) {
+        const cname = name + "=";
+        const decodedCookie = decodeURIComponent(document.cookie);
+        const ca = decodedCookie.split(';');
+        for (let c of ca) {
+            c = c.trim();
+            if (c.indexOf(cname) === 0) {
+                return c.substring(cname.length, c.length);
+            }
+        }
+        return "";
+    }
+    // ==== Show banner if no choice ====
+    window.onload = function() {
+        if (!getCookie("cookie_consent")) {
+            document.getElementById("cookie-banner").style.display = "block";
+        }
+    };
+    // ==== Accept ====
+    document.getElementById("accept-cookies").onclick = function() {
+        setCookie("cookie_consent", "accepted", 365);
+        document.getElementById("cookie-banner").style.display = "none";
+    };
+    // ==== Decline ====
+    document.getElementById("decline-cookies").onclick = function() {
+        setCookie("cookie_consent", "declined", 365);
+        document.getElementById("cookie-banner").style.display = "none";
+    };
+</script>
+
+
+<script>
+    // Tab switching functionality
+    function switchTab(tabName) {
+        // Hide all tabs
+        const tabs = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => tab.classList.remove('active'));
+
+        // Remove active class from all buttons
+        const buttons = document.querySelectorAll('.tab-button');
+        buttons.forEach(button => button.classList.remove('active'));
+
+        // Show selected tab
+        document.getElementById(tabName).classList.add('active');
+
+        // Add active class to clicked button
+        event.target.classList.add('active');
+    }
+
+    // Calculator functionality
+    function updateCalculator() {
+        const businessType = document.getElementById('business-type').value;
+        const documentsCount = parseInt(document.getElementById('documents-count').value) || 0;
+        const employeesCount = parseInt(document.getElementById('employees-count').value) || 0;
+
+        let monthlyCost = 0;
+        let oneTimeCost = 0;
+        let breakdown = [];
+
+        // Calculate main service cost
+        if (businessType === 'jdg') {
+            if (documentsCount === 0) {
+                monthlyCost += 100;
+                breakdown.push({ name: 'JDG - Bez aktywności', cost: 100 });
+            } else if (documentsCount <= 10) {
+                monthlyCost += 280;
+                breakdown.push({ name: 'JDG - Pakiet Mini (do 10 dok.)', cost: 280 });
+            } else if (documentsCount <= 30) {
+                monthlyCost += 380;
+                breakdown.push({ name: 'JDG - Pakiet Midi (11-30 dok.)', cost: 380 });
+            } else if (documentsCount <= 50) {
+                monthlyCost += 480;
+                breakdown.push({ name: 'JDG - Pakiet Midi Plus (31-50 dok.)', cost: 480 });
+            } else if (documentsCount <= 100) {
+                monthlyCost += 580;
+                breakdown.push({ name: 'JDG - Pakiet Maxi (51-100 dok.)', cost: 580 });
+            } else {
+                breakdown.push({ name: 'JDG - Pakiet Maxi Plus (powyżej 100)', cost: 'Wycena indywidualna' });
+            }
+        } else if (businessType === 'spzoo') {
+            if (documentsCount === 0) {
+                monthlyCost += 400;
+                breakdown.push({ name: 'Sp. z o.o. - Bez aktywności', cost: 400 });
+            } else if (documentsCount <= 20) {
+                monthlyCost += 700;
+                breakdown.push({ name: 'Sp. z o.o. - Pakiet Mini (do 20 dok.)', cost: 700 });
+            } else if (documentsCount <= 50) {
+                monthlyCost += 1000;
+                breakdown.push({ name: 'Sp. z o.o. - Pakiet Midi (21-50 dok.)', cost: 1000 });
+            } else if (documentsCount <= 100) {
+                monthlyCost += 1500;
+                breakdown.push({ name: 'Sp. z o.o. - Pakiet Maxi (51-100 dok.)', cost: 1500 });
+            } else {
+                breakdown.push({ name: 'Sp. z o.o. - Pakiet Maxi Plus (powyżej 100)', cost: 'Wycena indywidualna' });
+            }
+        }
+
+        // Calculate employees cost
+        if (employeesCount > 0) {
+            const employeeCost = employeesCount * 80;
+            monthlyCost += employeeCost;
+            breakdown.push({ name: `Kadry i płace (${employeesCount} prac.)`, cost: employeeCost });
+        }
+
+        // Calculate additional services
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+        checkboxes.forEach(checkbox => {
+            const cost = parseInt(checkbox.value);
+            oneTimeCost += cost;
+            breakdown.push({ name: checkbox.nextElementSibling.textContent, cost: cost, oneTime: true });
+        });
+
+        // Update the display
+        updateBreakdown(breakdown, monthlyCost, oneTimeCost);
+    }
+
+    function updateBreakdown(breakdown, monthlyCost, oneTimeCost) {
+        const breakdownDiv = document.getElementById('cost-breakdown');
+        const totalDiv = document.getElementById('total-cost');
+
+        if (breakdown.length === 0) {
+            breakdownDiv.innerHTML = `
+                    <div class="result-item">
+                        <span>Wybierz typ działalności</span>
+                        <span>-</span>
+                    </div>
+                `;
+            totalDiv.textContent = '0 zł / miesiąc';
+            return;
+        }
+
+        let html = '';
+        breakdown.forEach(item => {
+            const costDisplay = typeof item.cost === 'string' ? item.cost : `${item.cost} zł${item.oneTime ? ' (jednorazowo)' : '/mies.'}`;
+            html += `
+                    <div class="result-item">
+                        <span>${item.name}</span>
+                        <span>${costDisplay}</span>
+                    </div>
+                `;
+        });
+
+        breakdownDiv.innerHTML = html;
+
+        let totalText = '';
+        if (monthlyCost > 0) {
+            totalText += `${monthlyCost} zł / miesiąc`;
+        }
+        if (oneTimeCost > 0) {
+            if (totalText) totalText += ' + ';
+            totalText += `${oneTimeCost} zł jednorazowo`;
+        }
+        if (!totalText) totalText = 'Wycena indywidualna';
+
+        totalDiv.innerHTML = totalText;
+    }
+
+    // Initialize calculator
+    document.addEventListener('DOMContentLoaded', function() {
+        updateCalculator();
+    });
+</script>

@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISTEK SP. Z O.O. - Twoje nowoczesne biuro rachunkowe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container">
+        <nav class="nav">
+            <a href="#" class="logo" onclick="showPage('home')">
+                <div class="logo-img" >
+                    <img src="vistek2.png" alt="">
+                </div>
+                VISTEK
+            </a>
+
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#" onclick="showPage('home')" class="nav-link active">Strona główna</a></li>
+                <li><a href="#" onclick="showPage('about')" class="nav-link">O nas</a></li>
+                <li><a href="#" onclick="showPage('services')" class="nav-link">Usługi</a></li>
+                <li><a href="#" onclick="showPage('pricing')" class="nav-link">Cennik</a></li>
+                <li><a href="#" onclick="showPage('contact')" class="nav-link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main>
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="floating">VISTEK SP. Z O.O.</h1>
+                    <p>Twoje nowoczesne i niezawodne biuro rachunkowe. Profesjonalizm i indywidualne podejście do każdego klienta.</p>
+                    <div class="hero-cta">
+                        <a href="#" onclick="showPage('contact')" class="btn btn-primary">Skontaktuj się z nami</a>
+                        <a href="#" onclick="showPage('pricing')" class="btn btn-outline">Zobacz cennik</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Information Section -->
+        <section class="section" style="padding-top: var(--space-md);">
+            <div class="container">
+                <div style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(76, 175, 80, 0.02) 100%); border: 1px solid rgba(76, 175, 80, 0.1); border-radius: var(--radius-xl); padding: var(--space-xl); margin-bottom: var(--space-xl); backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(45, 80, 22, 0.08);">
+                    <div style="text-align: center; margin-bottom: var(--space-lg);">
+                        <div style="width: 60px; height: 4px; background: linear-gradient(90deg, var(--color-accent), var(--color-accent-dark)); border-radius: 2px; margin: 0 auto var(--space-sm);"></div>
+                        <h3 style="color: var(--color-text-primary); font-size: var(--font-size-2xl); font-weight: 300; letter-spacing: -0.02em; margin: 0;">Oferta specjalna</h3>
+                    </div>
+
+                    <div class="grid grid-2" style="gap: var(--space-lg);">
+                        <div style="background: var(--color-bg-secondary); border-radius: var(--radius-lg); padding: var(--space-lg); border: 1px solid rgba(0, 0, 0, 0.04); position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; right: 0; width: 80px; height: 80px; background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(76, 175, 80, 0.05)); border-radius: 0 var(--radius-lg) 0 80px;"></div>
+                            <div style="position: relative; z-index: 2;">
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-md);">
+                                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--font-size-lg);">🎯</div>
+                                    <div>
+                                        <h4 style="color: var(--color-text-primary); font-weight: 600; font-size: var(--font-size-lg); margin: 0; line-height: 1.3;">Rejestracja spółek</h4>
+                                        <p style="color: var(--color-text-tertiary); font-size: var(--font-size-sm); margin: 4px 0 0 0;">Sp. z o.o.</p>
+                                    </div>
+                                </div>
+                                <p style="color: var(--color-text-secondary); font-size: var(--font-size-base); line-height: 1.6; margin: 0 0 var(--space-md) 0;">
+                                    Przy wyborze stałej obsługi księgowej
+                                </p>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); flex-wrap: wrap;">
+                                    <span style="color: var(--color-text-light); font-size: var(--font-size-lg); text-decoration: line-through; text-decoration-color: #ef4444; text-decoration-thickness: 2px;">1 500 zł</span>
+                                    <div style="background: linear-gradient(135deg, #ef4444, #dc2626); color: white; padding: 4px 10px; border-radius: var(--radius-sm); font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">-50%</div>
+                                    <span style="color: var(--color-accent); font-size: var(--font-size-xl); font-weight: 700;">750 zł</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: var(--color-bg-secondary); border-radius: var(--radius-lg); padding: var(--space-lg); border: 1px solid rgba(0, 0, 0, 0.04); position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; right: 0; width: 80px; height: 80px; background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(76, 175, 80, 0.05)); border-radius: 0 var(--radius-lg) 0 80px;"></div>
+                            <div style="position: relative; z-index: 2;">
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-md);">
+                                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--font-size-lg);">💼</div>
+                                    <div>
+                                        <h4 style="color: var(--color-text-primary); font-weight: 600; font-size: var(--font-size-lg); margin: 0; line-height: 1.3;">Zmiany w KRS</h4>
+                                        <p style="color: var(--color-text-tertiary); font-size: var(--font-size-sm); margin: 4px 0 0 0;">Dla stałych klientów</p>
+                                    </div>
+                                </div>
+                                <p style="color: var(--color-text-secondary); font-size: var(--font-size-base); line-height: 1.6; margin: 0 0 var(--space-md) 0;">
+                                    Z abonamentem na obsługę księgową
+                                </p>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); flex-wrap: wrap;">
+                                    <span style="color: var(--color-text-light); font-size: var(--font-size-lg); text-decoration: line-through; text-decoration-color: #ef4444; text-decoration-thickness: 2px;">1 000 zł</span>
+                                    <div style="background: linear-gradient(135deg, #ef4444, #dc2626); color: white; padding: 4px 10px; border-radius: var(--radius-sm); font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">-30%</div>
+                                    <span style="color: var(--color-accent); font-size: var(--font-size-xl); font-weight: 700;">700 zł</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Wartości, które nas prowadzą</h2>
+                    <p class="section-subtitle">Profesjonalne wsparcie finansowe, które pozwala przedsiębiorcom skoncentrować się na rozwoju firmy</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="card">
+                        <span class="card-icon">🎯</span>
+                        <h3 class="card-title">Profesjonalizm</h3>
+                        <div class="card-content">
+                            <p>Najwyższe standardy branżowe i etyka zawodowa w każdym aspekcie naszej pracy.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">📋</span>
+                        <h3 class="card-title">Zgodność z przepisami</h3>
+                        <div class="card-content">
+                            <p>Stale aktualizowana wiedza o zmianach w prawie i regulacjach podatkowych.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">🔒</span>
+                        <h3 class="card-title">Bezpieczeństwo danych</h3>
+                        <div class="card-content">
+                            <p>Pełna poufność i ochrona danych zgodna z RODO i najwyższymi standardami.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">⏰</span>
+                        <h3 class="card-title">Terminowość</h3>
+                        <div class="card-content">
+                            <p>Precyzja i punktualność w realizacji wszystkich zobowiązań.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">🤝</span>
+                        <h3 class="card-title">Indywidualne podejście</h3>
+                        <div class="card-content">
+                            <p>Elastyczne rozwiązania dostosowane do specyfiki każdego klienta.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">🌍</span>
+                        <h3 class="card-title">Obsługa w całej Polsce</h3>
+                        <div class="card-content">
+                            <p>Nowoczesne narzędzia umożliwiają wygodną współpracę bez względu na lokalizację.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Kompleksowy zakres usług</h2>
+                    <p class="section-subtitle">Pełen wachlarz rozwiązań dostosowanych do potrzeb Twojej firmy</p>
+                </div>
+
+                <div class="grid grid-2">
+                    <div class="card">
+                        <span class="card-icon">📊</span>
+                        <h3 class="card-title">Usługi księgowe</h3>
+                        <div class="card-content">
+                            <ul>
+                                <li>Prowadzenie pełnej księgowości</li>
+                                <li>Księga Przychodów i Rozchodów (KPiR)</li>
+                                <li>Rozliczenia ryczałtu ewidencjonowanego</li>
+                                <li>Roczne sprawozdania finansowe</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">💰</span>
+                        <h3 class="card-title">Podatki</h3>
+                        <div class="card-content">
+                            <ul>
+                                <li>Przygotowywanie deklaracji CIT, PIT, VAT</li>
+                                <li>Reprezentacja przed Urzędem Skarbowym</li>
+                                <li>Bieżący kontakt z urzędami</li>
+                                <li>Optymalizacja podatkowa</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">👥</span>
+                        <h3 class="card-title">Kadry i płace</h3>
+                        <div class="card-content">
+                            <ul>
+                                <li>Obsługa list płac</li>
+                                <li>Umowy i składki ZUS</li>
+                                <li>Dokumentacja kadrowa</li>
+                                <li>Przygotowanie i wysyłka deklaracji ZUS DRA</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">🚀</span>
+                        <h3 class="card-title">Dla nowych firm</h3>
+                        <div class="card-content">
+                            <ul>
+                                <li>Wsparcie w zakładaniu działalności</li>
+                                <li>Dobór optymalnej formy prawnej</li>
+                                <li>Wybór najkorzystniejszej formy podatkowej</li>
+                                <li>Kompleksowe doradztwo na start</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="#" onclick="showPage('services')" class="btn btn-primary">Zobacz wszystkie usługi</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="floating">O nas</h1>
+                    <p>Poznaj naszą historię, zespół i podejście do prowadzenia biznesu</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-3">
+                    <div class="card">
+                        <span class="card-icon">🎯</span>
+                        <h3 class="card-title">Nasza misja</h3>
+                        <div class="card-content">
+                            <p>Dostarczanie rzetelnego i bezpiecznego wsparcia finansowego, które pozwala przedsiębiorcom skoncentrować się na rozwoju swojej firmy bez obaw o kwestie księgowe i kadrowe.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">👁️</span>
+                        <h3 class="card-title">Nasza wizja</h3>
+                        <div class="card-content">
+                            <p>Być najbardziej zaufanym partnerem biznesowym dla małych i średnich przedsiębiorstw w Polsce, oferując nowoczesne rozwiązania księgowe i kadrowe.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">⭐</span>
+                        <h3 class="card-title">Nasze wartości</h3>
+                        <div class="card-content">
+                            <p>Profesjonalizm, rzetelność, dyskrecja, terminowość oraz indywidualne podejście do każdego klienta to podstawa naszego działania.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header" style="margin-top: 4rem;">
+                    <h2 class="section-title">Dlaczego VISTEK?</h2>
+                </div>
+
+                <div class="grid grid-2">
+                    <div class="card">
+                        <span class="card-icon">🏆</span>
+                        <h3 class="card-title">Doświadczenie</h3>
+                        <div class="card-content">
+                            <p>Wieloletnie doświadczenie w branży księgowej i kadrowej. Znamy wszystkie zawiłości przepisów i regularnie podnosimy swoje kwalifikacje.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">🔒</span>
+                        <h3 class="card-title">Bezpieczeństwo</h3>
+                        <div class="card-content">
+                            <p>Gwarantujemy pełną poufność i bezpieczeństwo Twoich danych zgodnie z RODO. Używamy nowoczesnych systemów zabezpieczeń.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">⚡</span>
+                        <h3 class="card-title">Nowoczesność</h3>
+                        <div class="card-content">
+                            <p>Wykorzystujemy najnowsze technologie i oprogramowanie księgowe, co przekłada się na szybkość i precyzję naszych usług.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">🤝</span>
+                        <h3 class="card-title">Partnerstwo</h3>
+                        <div class="card-content">
+                            <p>Nie jesteśmy tylko dostawcą usług - jesteśmy Twoim partnerem biznesowym, który dba o rozwój Twojej firmy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SERVICES PAGE -->
+    <div id="services" class="page">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="container">
+                    <h1>Nasze usługi</h1>
+                    <p>Kompleksowa obsługa księgowa, kadrowa i podatkowa dla Twojej firmy</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2">
+                    <div class="card">
+                        <span class="card-icon">📊</span>
+                        <h3 class="card-title">Pełna księgowość</h3>
+                        <div class="card-content">
+                            <ul>
+                                <li>Prowadzenie ksiąg rachunkowych dla spółek</li>
+                                <li>Obsługa miesięczna według liczby dokumentów</li>
+                                <li>Roczne sprawozdania finansowe (bilans)</li>
+                                <li>Zarządzanie dokumentacją księgową</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">📋</span>
+                        <h3 class="card-title">JDG: Księga przychodów i rozchodów</h3>
+                        <div class="card-content">
+                            <ul>
+                                <li>Obsługa jednoosobowych działalności gospodarczych</li>
+                                <li>KPiR, ryczałt i ewidencje VAT</li>
+                                <li>Pakiety według liczby dokumentów</li>
+                                <li>Optymalizacja formy opodatkowania</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">👥</span>
+                        <h3 class="card-title">Kadry i płace</h3>
+                        <div class="card-content">
+                            <ul>
+                                <li>Rozliczanie pracowników (naliczanie wynagrodzeń)</li>
+                                <li>Zgłoszenia do ZUS (przyjęcie, zwolnienie)</li>
+                                <li>Obsługa dokumentacji kadrowej</li>
+                                <li>Przygotowanie deklaracji ZUS</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">🚀</span>
+                        <h3 class="card-title">Rejestracja firm i start-upy</h3>
+                        <div class="card-content">
+                            <ul>
+                                <li>Rejestracja spółek z o.o. i JDG</li>
+                                <li>Zmiany w KRS i aktualizacja danych NIP-8</li>
+                                <li>Konsultacje prawno-księgowe dla nowych firm</li>
+                                <li>Dobór optymalnej formy prawnej</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">🛠️</span>
+                        <h3 class="card-title">Dodatkowe usługi</h3>
+                        <div class="card-content">
+                            <ul>
+                                <li>Rejestracja VAT-R, VAT-UE, CRBR</li>
+                                <li>Sporządzanie i korekta deklaracji (PIT, CIT, VAT)</li>
+                                <li>Zaświadczenia z US i ZUS</li>
+                                <li>Przywrócenie księgowości</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-icon">📈</span>
+                        <h3 class="card-title">Doradztwo podatkowe</h3>
+                        <div class="card-content">
+                            <ul>
+                                <li>Optymalizacja podatkowa</li>
+                                <li>Reprezentacja przed urzędami</li>
+                                <li>Analiza przepisów podatkowych</li>
+                                <li>Wsparcie w kontrolach skarbowych</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="#" onclick="showPage('pricing')" class="btn btn-primary">Zobacz cennik</a>
+                    <a href="#" onclick="showPage('contact')" class="btn btn-primary">Skontaktuj się</a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- PRICING PAGE -->
+    <div id="pricing" class="page">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="container">
+                    <h1>Cennik usług księgowych</h1>
+                    <p>Przejrzyste ceny i kompleksowa obsługa księgowa dla Twojej firmy</p>
+                    <small style="opacity: 0.8;">Kwota nie podlega opodatkowaniu podatkiem VAT</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="pricing-tabs">
+                    <button class="tab-button active" onclick="switchTab('main-services', event)">Główne Usługi</button>
+                    <button class="tab-button" onclick="switchTab('additional', event)">Usługi Dodatkowe</button>
+                    <button class="tab-button" onclick="switchTab('calculator', event)">Kalkulator</button>
+                </div>
+
+                <!-- Main Services Tab -->
+                <div id="main-services" class="tab-content active">
+                    <div class="grid grid-3">
+                        <!-- Full Accounting Services -->
+                        <div class="service-package">
+                            <h3>📊 Prowadzenie ksiąg rachunkowych</h3>
+                            <p class="description">Dla spółek z ograniczoną odpowiedzialnością</p>
+
+                            <div class="package-tiers">
+                                <div class="tier">
+                                    <div>
+                                        <div class="tier-name">Bez aktywności</div>
+                                        <div class="tier-range">Brak dokumentów</div>
+                                    </div>
+                                    <div class="tier-price">400 zł/mies.</div>
+                                </div>
+
+                                <div class="tier">
+                                    <div>
+                                        <div class="tier-name">Pakiet Mini</div>
+                                        <div class="tier-range">Do 20 dokumentów</div>
+                                    </div>
+                                    <div class="tier-price">700 zł/mies.</div>
+                                </div>
+
+                                <div class="tier">
+                                    <div>
+                                        <div class="tier-name">Pakiet Midi</div>
+                                        <div class="tier-range">21-50 dokumentów</div>
+                                    </div>
+                                    <div class="tier-price">1 000 zł/mies.</div>
+                                </div>
+
+                                <div class="tier">
+                                    <div>
+                                        <div class="tier-name">Pakiet Maxi</div>
+                                        <div class="tier-range">51-100 dokumentów</div>
+                                    </div>
+                                    <div class="tier-price">1 500 zł/mies.</div>
+                                </div>
+
+                                <div class="tier">
+                                    <div>
+                                        <div class="tier-name">Pakiet Maxi Plus</div>
+                                        <div class="tier-range">Powyżej 100 dokumentów</div>
+                                    </div>
+                                    <div class="tier-price">Indywidualne</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Individual Business Accounting -->
+                        <div class="service-package">
+                            <h3>📋 JDG: KPiR, ryczałt</h3>
+                            <p class="description">Dla indywidualnej działalności gospodarczej</p>
+
+                            <div class="package-tiers">
+                                <div class="tier">
+                                    <div>
+                                        <div class="tier-name">Bez aktywności</div>
+                                        <div class="tier-range">Brak dokumentów</div>
+                                    </div>
+                                    <div class="tier-price">100 zł/mies.</div>
+                                </div>
+
+                                <div class="tier">
+                                    <div>
+                                        <div class="tier-name">Pakiet Mini</div>
+                                        <div class="tier-range">Do 10 dokumentów</div>
+                                    </div>
+                                    <div class="tier-price">280 zł/mies.</div>
+                                </div>
+
+                                <div class="tier">
+                                    <div>
+                                        <div class="tier-name">Pakiet Midi</div>
+                                        <div class="tier-range">11-30 dokumentów</div>
+                                    </div>
+                                    <div class="tier-price">380 zł/mies.</div>
+                                </div>
+
+                                <div class="tier">
+                                    <div>
+                                        <div class="tier-name">Pakiet Midi Plus</div>
+                                        <div class="tier-range">31-50 dokumentów</div>
+                                    </div>
+                                    <div class="tier-price">480 zł/mies.</div>
+                                </div>
+
+                                <div class="tier">
+                                    <div>
+                                        <div class="tier-name">Pakiet Maxi</div>
+                                        <div class="tier-range">51-100 dokumentów</div>
+                                    </div>
+                                    <div class="tier-price">580 zł/mies.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HR and Payroll -->
+                        <div class="service-package">
+                            <h3>👥 Kadry i płace</h3>
+                            <p class="description">Za 1 pracownika</p>
+
+                            <div class="package-tiers">
+                                <div class="tier">
+                                    <div>
+                                        <div class="tier-name">Rozliczenie pracownika</div>
+                                        <div class="tier-range">Obsługa kadrowo-płacowa</div>
+                                    </div>
+                                    <div class="tier-price">80 zł/mies.</div>
+                                </div>
+
+                                <div class="tier">
+                                    <div>
+                                        <div class="tier-name">Zgłoszenie ZUS</div>
+                                        <div class="tier-range">Przyjęcie/zwolnienie</div>
+                                    </div>
+                                    <div class="tier-price">80 zł</div>
+                                </div>
+
+                                <div class="tier">
+                                    <div>
+                                        <div class="tier-name">Dokumenty kadrowe</div>
+                                        <div class="tier-range">Na żądanie</div>
+                                    </div>
+                                    <div class="tier-price">50-100 zł/szt.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Services Tab -->
+                <div id="additional" class="tab-content">
+                    <div class="card">
+                        <h3 class="card-title">🛠️ Dodatkowe usługi</h3>
+                        <div class="card-content">
+                            <div style="overflow-x: auto;">
+                                <table style="width: 100%; border-collapse: collapse; margin-top: var(--space-md);">
+                                    <thead>
+                                    <tr style="background: rgba(0, 0, 0, 0.02);">
+                                        <th style="padding: var(--space-sm); text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.08);">Usługa</th>
+                                        <th style="padding: var(--space-sm); text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.08);">Opis</th>
+                                        <th style="padding: var(--space-sm); text-align: right; border-bottom: 1px solid rgba(0, 0, 0, 0.08);">Cena</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td style="padding: var(--space-sm); border-bottom: 1px solid rgba(0, 0, 0, 0.04);"><strong>Rejestracja Sp. z o.o.</strong></td>
+                                        <td style="padding: var(--space-sm); border-bottom: 1px solid rgba(0, 0, 0, 0.04);">KRS, CRBR, PCC-3, NIP-8, e-urząd skarbowy</td>
+                                        <td style="padding: var(--space-sm); text-align: right; border-bottom: 1px solid rgba(0, 0, 0, 0.04); color: var(--color-accent); font-weight: 600;">1 500 zł</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: var(--space-sm); border-bottom: 1px solid rgba(0, 0, 0, 0.04);"><strong>Rejestracja JDG</strong></td>
+                                        <td style="padding: var(--space-sm); border-bottom: 1px solid rgba(0, 0, 0, 0.04);">Z wyłączeniem obowiązkowych opłat</td>
+                                        <td style="padding: var(--space-sm); text-align: right; border-bottom: 1px solid rgba(0, 0, 0, 0.04); color: var(--color-accent); font-weight: 600;">od 300 zł</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: var(--space-sm); border-bottom: 1px solid rgba(0, 0, 0, 0.04);"><strong>Zmiany w KRS</strong></td>
+                                        <td style="padding: var(--space-sm); border-bottom: 1px solid rgba(0, 0, 0, 0.04);">Wnesienie zmian danych o przedsiębiorstwie</td>
+                                        <td style="padding: var(--space-sm); text-align: right; border-bottom: 1px solid rgba(0, 0, 0, 0.04); color: var(--color-accent); font-weight: 600;">1 000 zł</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: var(--space-sm); border-bottom: 1px solid rgba(0, 0, 0, 0.04);"><strong>Rejestracja VAT-R, VAT-UE</strong></td>
+                                        <td style="padding: var(--space-sm); border-bottom: 1px solid rgba(0, 0, 0, 0.04);">Wniosek o rejestrację jako podatnik VAT</td>
+                                        <td style="padding: var(--space-sm); text-align: right; border-bottom: 1px solid rgba(0, 0, 0, 0.04); color: var(--color-accent); font-weight: 600;">200 zł</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: var(--space-sm); border-bottom: 1px solid rgba(0, 0, 0, 0.04);"><strong>Zaświadczenie US</strong></td>
+                                        <td style="padding: var(--space-sm); border-bottom: 1px solid rgba(0, 0, 0, 0.04);">O niezaleganiu z podatkami</td>
+                                        <td style="padding: var(--space-sm); text-align: right; border-bottom: 1px solid rgba(0, 0, 0, 0.04); color: var(--color-accent); font-weight: 600;">100 zł</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: var(--space-sm); border-bottom: 1px solid rgba(0, 0, 0, 0.04);"><strong>Elektroniczne sprawozdania</strong></td>
+                                        <td style="padding: var(--space-sm); border-bottom: 1px solid rgba(0, 0, 0, 0.04);">Składanie sprawozdań finansowych</td>
+                                        <td style="padding: var(--space-sm); text-align: right; border-bottom: 1px solid rgba(0, 0, 0, 0.04); color: var(--color-accent); font-weight: 600;">400 zł</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculator Tab -->
+                <div id="calculator" class="tab-content">
+                    <div class="calculator-section">
+                        <div class="calculator-header">
+                            <h2>🧮 Kalkulator Kosztów</h2>
+                            <p>Oblicz szacunkowe koszty obsługi księgowej i kadrowej dla Twojej firmy</p>
+                        </div>
+
+                        <div class="calculator-form">
+                            <div class="calculator-inputs">
+                                <div class="form-group">
+                                    <label for="business-type">Typ działalności:</label>
+                                    <select id="business-type" onchange="updateCalculator()">
+                                        <option value="">Wybierz typ działalności</option>
+                                        <option value="jdg">Jednoosobowa działalność gospodarcza (JDG)</option>
+                                        <option value="spzoo">Spółka z ograniczoną odpowiedzialnością (Sp. z o.o.)</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="documents-count">Ilość dokumentów miesięcznie:</label>
+                                    <input type="number" id="documents-count" placeholder="np. 25" min="0" onchange="updateCalculator()">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="employees-count">Ilość pracowników:</label>
+                                    <input type="number" id="employees-count" placeholder="np. 3" min="0" onchange="updateCalculator()">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Usługi dodatkowe:</label>
+                                    <div class="checkbox-group">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="vat-reg" value="200" onchange="updateCalculator()">
+                                            <label for="vat-reg">Rejestracja VAT (200 zł)</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="annual-report" value="400" onchange="updateCalculator()">
+                                            <label for="annual-report">Elektroniczne składanie sprawozdań (400 zł)</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="accounting-policy" value="300" onchange="updateCalculator()">
+                                            <label for="accounting-policy">Polityka rachunkowości (300 zł)</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="company-registration" value="1500" onchange="updateCalculator()">
+                                            <label for="company-registration">Rejestracja Sp. z o.o. (1500 zł)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calculator-result">
+                                <h3 class="result-title">📊 Szacunkowe koszty</h3>
+                                <div class="result-breakdown" id="cost-breakdown">
+                                    <div class="result-item">
+                                        <span>Wybierz typ działalności</span>
+                                        <span>-</span>
+                                    </div>
+                                </div>
+                                <div class="result-total" id="total-cost">0 zł / miesiąc</div>
+                                <a href="#form" onclick="showPage('contact')" class="btn btn-primary">💬 Skontaktuj się z nami</a>
+                                <p style="font-size: 0.9rem; margin-top: 20px; opacity: 0.8;">
+                                    * Podane ceny są orientacyjne. Dokładna wycena zostanie przygotowana po konsultacji.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <div class="card" style="max-width: 600px; margin: 0 auto;">
+                        <span class="card-icon">💡</span>
+                        <h3 class="card-title">Potrzebujesz indywidualnej wyceny?</h3>
+                        <div class="card-content">
+                            <p style="margin-bottom: 1.5rem;">Każda firma ma swoje unikalne potrzeby. Skontaktuj się z nami, aby otrzymać spersonalizowaną ofertę.</p>
+                            <a href="#" onclick="showPage('contact')" class="btn btn-primary">Skontaktuj się z nami</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="container">
+                    <h1>Kontakt</h1>
+                    <p>Jesteśmy gotowi na współpracę z Tobą. Chętnie odpowiemy na wszystkie pytania.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="anna-photo">AL</div>
+                        <h3 class="card-title">Kontakt bezpośredni</h3>
+                        <div class="card-content">
+                            <p style="font-size: var(--font-size-lg); font-weight: 600; margin: var(--space-sm) 0;">📞 +48 451 270 218</p>
+                            <p style="font-size: var(--font-size-lg); font-weight: 600; margin: var(--space-sm) 0;">✉️ biuro@vistek.com.pl</p>
+                            <p style="margin-top: var(--space-md); color: var(--color-text-tertiary);">
+                                Dostępna od poniedziałku do soboty w godzinach 9:00-17:00.
+                                Chętnie odpowiem na wszystkie Twoje pytania.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="card-icon">🏛️</span>
+                        <h3 class="card-title">Dane firmy</h3>
+                        <div class="card-content">
+                            <p style="font-weight: 600; margin-bottom: var(--space-sm);">VISTEK SP. Z O.O.</p>
+                            <p><strong>NIP:</strong> 9662209608</p>
+                            <p><strong>REGON:</strong> 542377535</p>
+                            <p><strong>KRS:</strong> 0001187024</p>
+                            <p style="margin-top: var(--space-md); color: var(--color-text-tertiary);">
+                                Spółka z ograniczoną odpowiedzialnością wpisana do Krajowego Rejestru Sądowego.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Section -->
+                <div id="form" class="contact-form-section">
+                    <div class="container">
+                        <div class="form-container">
+                            <h2 class="form-title">Napisz do nas</h2>
+                            <p class="form-subtitle">Odpowiemy w ciągu 24 godzin</p>
+
+                            <form id="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstName" class="form-label">Imię <span class="required">*</span></label>
+                                        <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Twoje imię" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName" class="form-label">Nazwisko <span class="required">*</span></label>
+                                        <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Twoje nazwisko" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="przykład@email.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Telefon</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="+48 123 456 789">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Temat zapytania <span class="required">*</span></label>
+                                    <select id="subject" name="subject" class="form-select" required>
+                                        <option value="">Wybierz temat</option>
+                                        <option value="ksiegowosc">Usługi księgowe</option>
+                                        <option value="kadry">Kadry i płace</option>
+                                        <option value="rejestracja">Rejestracja firmy</option>
+                                        <option value="doradztwo">Doradztwo podatkowe</option>
+                                        <option value="cennik">Pytania o cennik</option>
+                                        <option value="inne">Inne</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Wiadomość <span class="required">*</span></label>
+                                    <textarea id="message" name="message" class="form-textarea" placeholder="Opisz szczegółowo swoje pytanie lub potrzeby..." required></textarea>
+                                </div>
+
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="privacy" name="privacy" class="checkbox-input" required>
+                                    <label for="privacy" class="checkbox-label">
+                                        Zgadzam się na przetwarzanie moich danych osobowych zgodnie z polityką prywatności <span class="required">*</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="submit-btn">Wyślij wiadomość</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>VISTEK SP. Z O.O.</h3>
+                <p>Twoje nowoczesne biuro rachunkowe</p>
+                <p style="margin-top: var(--space-sm); opacity: 0.8;">
+                    Profesjonalna obsługa księgowa, kadrowa i podatkowa dla firm w całej Polsce.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Nasze usługi</h3>
+                <ul>
+                    <li><a href="#" onclick="showPage('services')">Pełna księgowość</a></li>
+                    <li><a href="#" onclick="showPage('services')">Kadry i płace</a></li>
+                    <li><a href="#" onclick="showPage('services')">Obsługa podatkowa</a></li>
+                    <li><a href="#" onclick="showPage('services')">Rejestracja firm</a></li>
+                    <li><a href="#" onclick="showPage('pricing')">Cennik usług</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>15-063 Białystok</p>
+                <p>biuro@vistek.com.pl</p>
+                <p>+48 451 270 218</p>
+                <p style="margin-top: var(--space-sm); opacity: 0.8;">
+                    Godziny pracy: Pn-Sb 9:00-17:00
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Informacje prawne</h3>
+                <ul>
+                    <li>NIP: 9662209608</li>
+                    <li>REGON: 542377535</li>
+                    <li>KRS: 0001187024</li>
+                </ul>
+                <p style="margin-top: var(--space-sm); opacity: 0.8;">
+                    Spółka z ograniczoną odpowiedzialnością wpisana do Krajowego Rejestru Sądowego.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 VISTEK SP. Z O.O. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ========== COOKIE BANNER ========== -->
+<div id="cookie-banner">
+    <h2>Dbamy o Twoje cookie 🍪</h2>
+    <p>
+        Nasza strona korzysta z plików cookie w celu poprawy jakości usług i doświadczeń użytkownika.
+        Klikając „Przyjmij" wyrażasz zgodę na ich użycie zgodnie z
+        <a href="https://www.freeprivacypolicy.com/live/01aecf20-b227-46f7-b3c9-138a34f74b7d">Polityką cookies</a>.
+    </p>
+    <div class="cookie-buttons">
+        <button class="decline" id="decline-cookies">Odrzuć</button>
+        <button class="accept" id="accept-cookies">Przyjmij</button>
+    </div>
+</div>
+<!-- JavaScript -->
+<!-- ========== SCRIPTS ========== -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- EmailJS Library -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script src="cookie.js"></script>
+
+<script src="calculator.js"></script>
+<script src="emailJS.js"></script>
+<script src="index.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const heroSection = document.querySelector('.hero');
+
+        // Сначала убираем класс animate, чтобы сбрасывать анимацию
+        heroSection.classList.remove('animate');
+
+        // Добавляем через небольшую задержку, чтобы анимация запустилась
+        setTimeout(() => {
+            heroSection.classList.add('animate');
+        }, 100);
+    });
+</script>
+</body>
+</html>
