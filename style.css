@@ -724,6 +724,7 @@ footer {
 
 .footer-section ul {
     list-style: none;
+    padding: 0;
 }
 
 .footer-section ul li {
@@ -769,8 +770,13 @@ footer {
         transform: translateY(0);
     }
 }
-
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* две колонки для больших экранов */
+    gap: 20px; /* добавляем пространство между полями */
+}
 /* ===== RESPONSIVE DESIGN ===== */
+
 @media (max-width: 768px) {
     :root {
         --space-xs: 0.25rem;
