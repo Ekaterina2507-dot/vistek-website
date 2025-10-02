@@ -881,7 +881,7 @@
                             <h2 class="form-title">Napisz do nas</h2>
                             <p class="form-subtitle">Odpowiemy w ciągu 24 godzin</p>
 
-                            <form id="contactForm">
+                            <form id="contactForm" novalidate>
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="firstName" class="form-label">Imię <span class="required">*</span></label>
@@ -1005,15 +1005,18 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <!-- EmailJS Library -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- Leo Profanity z CDN -->
+<script src="https://unpkg.com/leo-profanity@1.8.0"></script>
 
+<!-- Twoje skrypty -->
+<script src="js/profanity-list.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/emailJS.js"></script>
+<script src="js/index.js"></script>
+<script src="js/profanity-list.js"></script>
+<script type="module" src="js/validation.js"></script>
 
-
-<script src="cookie.js"></script>
-
-<script src="calculator.js"></script>
-<script src="emailJS.js"></script>
-<script src="index.js"></script>
-<script src="validation.js"></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {

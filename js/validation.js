@@ -1,19 +1,18 @@
 // Инициализация EmailJS
 emailjs.init('BhGIV5pyEcpw0oLtL');
 
-// Список нецензурных слов
-const profanityList = {
-    en: ['fuck', 'shit', 'damn', 'bitch', 'asshole', 'bastard', 'crap'],
-    ru: ['блять', 'хуй', 'пизда', 'ебать', 'сука', 'дерьмо', 'гавно'],
-    pl: ['kurwa', 'chuj', 'pierdol', 'jebać', 'dupa', 'gówno', 'skurwysyn']
-};
-
 // Функция проверки на нецензурную лексику
 function checkProfanity(text) {
     const lowerText = text.toLowerCase();
     for (let lang in profanityList) {
         for (let word of profanityList[lang]) {
-            if (lowerText.includes(word)) {
+            // Проверяем как отдельное слово (с границами слов)
+            const wordRegex = new RegExp('\\b' + word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i');
+            if (wordRegex.test(text)) {
+                return true;
+            }
+            // Дополнительная проверка для случаев без пробелов
+            if (lowerText.includes(word.toLowerCase())) {
                 return true;
             }
         }
