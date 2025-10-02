@@ -1,5 +1,8 @@
+
+//validation.js
+
 // Инициализация EmailJS
-//emailjs.init('BhGIV5pyEcpw0oLtL');
+emailjs.init('BhGIV5pyEcpw0oLtL');
 
 let currentLang = 'pl';
 
@@ -16,6 +19,13 @@ if (document.readyState === 'loading') {
 } else {
     syncLanguage();
 }
+
+// Следим за изменениями глобального языка
+setInterval(() => {
+    if (typeof window.currentLang !== 'undefined' && window.currentLang !== currentLang) {
+        currentLang = window.currentLang;
+    }
+}, 100);
 
 // Объект с переводами сообщений об ошибках
 const validationMessages = {

@@ -1,4 +1,4 @@
-
+//translator.js
 
 window.currentLang = 'pl';
 
@@ -6,13 +6,17 @@ function toggleLanguage() {
     const checkbox = document.getElementById('langSwitch');
 
     if (checkbox.checked) {
-        currentLang = 'ru';
+        window.currentLang = 'ru';
         translateToRussian();
-        updateValidatorLanguage('ru');
+        if (typeof updateValidatorLanguage === 'function') {
+            updateValidatorLanguage('ru');
+        }
     } else {
-        currentLang = 'pl';
+        window.currentLang = 'pl';
         translateToPolish();
-        updateValidatorLanguage('pl');
+        if (typeof updateValidatorLanguage === 'function') {
+            updateValidatorLanguage('pl');
+        }
     }
 }
 
