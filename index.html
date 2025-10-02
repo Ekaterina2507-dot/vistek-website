@@ -6,7 +6,6 @@
     <title>VISTEK SP. Z O.O. - Twoje nowoczesne biuro rachunkowe</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="design.css">
 
 </head>
 <body>
@@ -15,7 +14,7 @@
     <div class="container">
         <nav class="nav">
             <a href="#" class="logo" onclick="showPage('home')">
-                <div class="logo-img" >
+                <div class="logo-img">
                     <img src="vistek_logo.png" alt="">
                 </div>
             </a>
@@ -32,7 +31,18 @@
                 <li><a href="#" onclick="showPage('services')" class="nav-link">Usługi</a></li>
                 <li><a href="#" onclick="showPage('pricing')" class="nav-link">Cennik</a></li>
                 <li><a href="#" onclick="showPage('contact')" class="nav-link">Kontakt</a></li>
+                <li>
+                    <div class="lang-toggle">
+                        <input type="checkbox" id="langSwitch" onchange="toggleLanguage()">
+                        <label for="langSwitch">
+                            <span class="lang pl">PL</span>
+                            <span class="lang ru">RU</span>
+                            <div class="slider"></div>
+                        </label>
+                    </div>
+                </li>
             </ul>
+
         </nav>
     </div>
 </header>
@@ -1014,8 +1024,10 @@
 <script src="js/calculator.js"></script>
 <script src="js/emailJS.js"></script>
 <script src="js/index.js"></script>
+<script src="js/translator.js"></script>
 <script src="js/profanity-list.js"></script>
 <script type="module" src="js/validation.js"></script>
+
 
 
 <script>
