@@ -10,7 +10,6 @@
     <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
 
     <style>
-        /* Link do Twojego style.css - zachowuję wszystkie Twoje style */
         @import url('style.css');
 
         /* Dodatkowe style dla ikon SVG */
@@ -174,7 +173,9 @@
                             <div style="position: absolute; top: 0; right: 0; width: 80px; height: 80px; background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(76, 175, 80, 0.05)); border-radius: 0 var(--radius-lg) 0 80px;"></div>
                             <div style="position: relative; z-index: 2;">
                                 <div style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-md);">
-                                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--font-size-lg);">🎯</div>
+                                    <div class="promo-icon">
+                                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    </div>
                                     <div>
                                         <h4 style="color: var(--color-text-primary); font-weight: 600; margin: 0; line-height: 1.3;">Rejestracja spółek</h4>
                                         <p style="color: var(--color-text-tertiary); font-size: var(--font-size-sm); margin: 4px 0 0 0;">Sp. z o.o.</p>
@@ -195,7 +196,9 @@
                             <div style="position: absolute; top: 0; right: 0; width: 80px; height: 80px; background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(76, 175, 80, 0.05)); border-radius: 0 var(--radius-lg) 0 80px;"></div>
                             <div style="position: relative; z-index: 2;">
                                 <div style="display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-md); ">
-                                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--font-size-lg);">💼</div>
+                                    <div class="promo-icon">
+                                        <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                                    </div>
                                     <div>
                                         <h4 style="color: var(--color-text-primary); font-weight: 600; margin: 0; line-height: 1.3;">Zmiany w KRS</h4>
                                         <p style="color: var(--color-text-tertiary); font-size: var(--font-size-sm); margin: 4px 0 0 0;">Dla stałych klientów</p>
@@ -228,10 +231,9 @@
                 <div class="grid grid-3 ">
                     <div class="card ">
                         <div class="corner-double-green"></div>
-                            <div class="icon-badge">
-                                <svg viewBox="0 0 24 24"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm-1 15l-4-4 1.41-1.41L11 14.17l6.59-6.59L19 9l-8 8z"/>
-                                </svg>
-                            </div>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zM10 17l-4-4 1.41-1.41L10 14.17l6.59-6.59L19 9l-8 8z"/></svg>
+                        </div>
                         <h3 class="card-title">Profesjonalizm</h3>
                         <div class="card-content">
                             <p>Najwyższe standardy branżowe i etyka zawodowa w każdym aspekcie naszej pracy.</p>
