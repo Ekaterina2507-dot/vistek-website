@@ -340,7 +340,7 @@ function translateToRussian() {
 function translateToPolish() {
 
     // Навигация
-    document.querySelector('.nav-link.active').textContent = 'Strona główna';
+    document.querySelector('.nav-link.active').textContent = 'Strona Główna';
     document.querySelectorAll('.nav-link')[1].textContent = 'O nas';
     document.querySelectorAll('.nav-link')[2].textContent = 'Usługi';
     document.querySelectorAll('.nav-link')[3].textContent = 'Cennik';

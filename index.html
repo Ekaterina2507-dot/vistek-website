@@ -7,10 +7,101 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="vistek_logo.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="vistek_logo.png">
-    <link rel="apple-touch-icon" href="vistek_logo.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+
+    <style>
+        /* Link do Twojego style.css - zachowuję wszystkie Twoje style */
+        @import url('style.css');
+
+        /* Dodatkowe style dla ikon SVG */
+        .icon-badge {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-sm);
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover .icon-badge {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.35);
+        }
+
+        .icon-badge svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        /* Ikony w specjalnej ofercie */
+        .promo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .promo-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: white;
+        }
+
+        /* Ikony w tabeli */
+        .table-icon {
+            display: inline-flex;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        .table-icon svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--color-accent);
+        }
+
+        /* Logo mark zamiast obrazka */
+        .logo-mark {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            box-shadow: 0 2px 8px rgba(45, 80, 22, 0.2);
+        }
+
+        /* Ikona kontaktu */
+        .contact-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-sm);
+            box-shadow: 0 4px 20px rgba(76, 175, 80, 0.3);
+        }
+
+        .contact-icon-wrapper svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
+        }
+    </style>
 </head>
 <body>
 <!-- Header -->
@@ -137,7 +228,10 @@
                 <div class="grid grid-3 ">
                     <div class="card ">
                         <div class="corner-double-green"></div>
-                        <span class="card-icon  ">🎯</span>
+                            <div class="icon-badge">
+                                <svg viewBox="0 0 24 24"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm-1 15l-4-4 1.41-1.41L11 14.17l6.59-6.59L19 9l-8 8z"/>
+                                </svg>
+                            </div>
                         <h3 class="card-title">Profesjonalizm</h3>
                         <div class="card-content">
                             <p>Najwyższe standardy branżowe i etyka zawodowa w każdym aspekcie naszej pracy.</p>
@@ -145,7 +239,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">📋</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                        </div>
                         <h3 class="card-title">Zgodność z przepisami</h3>
                         <div class="card-content">
                             <p>Stale aktualizowana wiedza o zmianach w prawie i regulacjach podatkowych.</p>
@@ -153,7 +249,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">🔒</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                        </div>
                         <h3 class="card-title">Bezpieczeństwo danych</h3>
                         <div class="card-content">
                             <p>Pełna poufność i ochrona danych zgodna z RODO i najwyższymi standardami.</p>
@@ -161,7 +259,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">⏰</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        </div>
                         <h3 class="card-title">Terminowość</h3>
                         <div class="card-content">
                             <p>Precyzja i punktualność w realizacji wszystkich zobowiązań.</p>
@@ -169,7 +269,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">🤝</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                        </div>
                         <h3 class="card-title">Indywidualne podejście</h3>
                         <div class="card-content">
                             <p>Elastyczne rozwiązania dostosowane do specyfiki każdego klienta.</p>
@@ -177,7 +279,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">🌍</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        </div>
                         <h3 class="card-title">Obsługa w całej Polsce</h3>
                         <div class="card-content">
                             <p>Nowoczesne narzędzia umożliwiają wygodną współpracę bez względu na lokalizację.</p>
@@ -197,7 +301,9 @@
 
                 <div class="grid grid-2">
                     <div class="card">
-                        <span class="card-icon">📊</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.1h-15V5h15v14.1zm0-16.1h-15c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                        </div>
                         <h3 class="card-title">Usługi księgowe</h3>
                         <div class="card-content">
                             <ul>
@@ -210,7 +316,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">💰</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+                        </div>
                         <h3 class="card-title">Podatki</h3>
                         <div class="card-content">
                             <ul>
@@ -223,7 +331,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">👥</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                        </div>
                         <h3 class="card-title">Kadry i płace</h3>
                         <div class="card-content">
                             <ul>
@@ -236,7 +346,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">🚀</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </div>
                         <h3 class="card-title">Dla nowych firm</h3>
                         <div class="card-content">
                             <ul>
@@ -271,7 +383,9 @@
             <div class="container">
                 <div class="grid grid-3">
                     <div class="card">
-                        <span class="card-icon">🎯</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </div>
                         <h3 class="card-title">Nasza misja</h3>
                         <div class="card-content">
                             <p>Dostarczanie rzetelnego i bezpiecznego wsparcia finansowego, które pozwala przedsiębiorcom skoncentrować się na rozwoju swojej firmy bez obaw o kwestie księgowe i kadrowe.</p>
@@ -279,7 +393,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">👁️</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                        </div>
                         <h3 class="card-title">Nasza wizja</h3>
                         <div class="card-content">
                             <p>Być najbardziej zaufanym partnerem biznesowym dla małych i średnich przedsiębiorstw w Polsce, oferując nowoczesne rozwiązania księgowe i kadrowe.</p>
@@ -287,7 +403,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">⭐</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
                         <h3 class="card-title">Nasze wartości</h3>
                         <div class="card-content">
                             <p>Profesjonalizm, rzetelność, dyskrecja, terminowość oraz indywidualne podejście do każdego klienta to podstawa naszego działania.</p>
@@ -301,7 +419,9 @@
 
                 <div class="grid grid-2">
                     <div class="card">
-                        <span class="card-icon">🏆</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"/></svg>
+                        </div>
                         <h3 class="card-title">Doświadczenie</h3>
                         <div class="card-content">
                             <p>Wieloletnie doświadczenie w branży księgowej i kadrowej. Znamy wszystkie zawiłości przepisów i regularnie podnosimy swoje kwalifikacje.</p>
@@ -309,7 +429,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">🔒</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                        </div>
                         <h3 class="card-title">Bezpieczeństwo</h3>
                         <div class="card-content">
                             <p>Gwarantujemy pełną poufność i bezpieczeństwo Twoich danych zgodnie z RODO. Używamy nowoczesnych systemów zabezpieczeń.</p>
@@ -317,7 +439,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">⚡</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                        </div>
                         <h3 class="card-title">Nowoczesność</h3>
                         <div class="card-content">
                             <p>Wykorzystujemy najnowsze technologie i oprogramowanie księgowe, co przekłada się na szybkość i precyzję naszych usług.</p>
@@ -325,7 +449,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">🤝</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                        </div>
                         <h3 class="card-title">Partnerstwo</h3>
                         <div class="card-content">
                             <p>Nie jesteśmy tylko dostawcą usług - jesteśmy Twoim partnerem biznesowym, który dba o rozwój Twojej firmy.</p>
@@ -351,7 +477,9 @@
             <div class="container">
                 <div class="grid grid-2">
                     <div class="card">
-                        <span class="card-icon">📊</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.1h-15V5h15v14.1zm0-16.1h-15c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                        </div>
                         <h3 class="card-title">Pełna księgowość</h3>
                         <div class="card-content">
                             <ul>
@@ -364,7 +492,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">📋</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                        </div>
                         <h3 class="card-title">JDG: Księga przychodów i rozchodów</h3>
                         <div class="card-content">
                             <ul>
@@ -377,7 +507,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">👥</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                        </div>
                         <h3 class="card-title">Kadry i płace</h3>
                         <div class="card-content">
                             <ul>
@@ -390,7 +522,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">🚀</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/></svg>
+                        </div>
                         <h3 class="card-title">Rejestracja firm i start-upy</h3>
                         <div class="card-content">
                             <ul>
@@ -403,7 +537,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">🛠️</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+                        </div>
                         <h3 class="card-title">Dodatkowe usługi</h3>
                         <div class="card-content">
                             <ul>
@@ -416,7 +552,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-icon">📈</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+                        </div>
                         <h3 class="card-title">Doradztwo podatkowe</h3>
                         <div class="card-content">
                             <ul>
@@ -463,7 +601,9 @@
                     <div class="grid grid-3">
                         <!-- Full Accounting Services -->
                         <div class="service-package">
-                            <h3>📊 Prowadzenie ksiąg rachunkowych</h3>
+                            <h3><span class="table-icon">
+                                    <svg viewBox="0 0 24 24" style="width: 24px; height: 24px; fill: var(--color-accent);"><path d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.1h-15V5h15v14.1zm0-16.1h-15c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                                </span> Prowadzenie ksiąg rachunkowych</h3>
                             <p class="description">Dla spółek z ograniczoną odpowiedzialnością</p>
 
                             <div class="package-tiers">
@@ -511,7 +651,9 @@
 
                         <!-- Individual Business Accounting -->
                         <div class="service-package">
-                            <h3>📋 JDG: KPiR, ryczałt</h3>
+                            <h3><span class="table-icon">
+                                    <svg viewBox="0 0 24 24" style="width: 24px; height: 24px; fill: var(--color-accent);"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                                </span> JDG: KPiR, ryczałt</h3>
                             <p class="description">Dla indywidualnej działalności gospodarczej</p>
 
                             <div class="package-tiers">
@@ -559,7 +701,9 @@
 
                         <!-- HR and Payroll -->
                         <div class="service-package">
-                            <h3>👥 Kadry i płace</h3>
+                            <h3><span class="table-icon">
+                                    <svg viewBox="0 0 24 24" style="width: 24px; height: 24px; fill: var(--color-accent);"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                                </span> Kadry i płace</h3>
                             <p class="description">Za 1 pracownika</p>
 
                             <div class="package-tiers">
@@ -594,7 +738,10 @@
                 <!-- Additional Services Tab -->
                 <div id="additional" class="tab-content">
                     <div class="card">
-                        <h3 class="card-title">🛠️ Dodatkowe usługi</h3>
+                        <h3 class="card-title">
+                            <span class="table-icon">
+                                <svg viewBox="0 0 24 24" style="width: 28px; height: 28px; fill: var(--color-accent);"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+                            </span> Dodatkowe usługi</h3>
                         <div class="card-content">
                             <div style="overflow-x: auto;">
                                 <table class="services-table" style="width: 100%; border-collapse: collapse; margin-top: var(--space-md); table-layout: fixed;">
@@ -606,10 +753,13 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <!-- 🔥 Первый пункт со скидкой -->
+                                    <!-- Первый пункт со скидкой -->
                                     <tr style="background: var(--color-bg-service); box-shadow: var(--shadow-subtle); border-radius: var(--radius-md);">
                                         <td style="font-weight: 700; color: var(--color-primary-dark);">
-                                            ⭐ Rejestracja Sp. z o.o.
+                                            <span class="table-icon">
+                                                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            </span>
+                                            Rejestracja Sp. z o.o.
                                             <span style="display: inline-block; margin-left: 8px; background: var(--color-accent); color: white; font-size: var(--font-size-xs); font-weight: 600; padding: 2px 6px; border-radius: var(--radius-sm);">
                                                  -50%
                                             </span>
@@ -626,7 +776,10 @@
                                     <!-- Второй пункт -->
                                     <tr style="background: var(--overlay-light);">
                                         <td style=" font-weight: 600; color: var(--color-primary-dark);">
-                                            🎯 Rejestracja JDG
+                                            <span class="table-icon">
+                                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                            </span>
+                                            Rejestracja JDG
                                         </td>
                                         <td style="text-align: right">
                                             Z wyłączeniem obowiązkowych opłat
@@ -639,7 +792,10 @@
                                     <!-- Третий пункт -->
                                     <tr style="background: var(--overlay-light);">
                                         <td style="font-weight: 600; color: var(--color-primary-dark);">
-                                            📝 Zmiany w KRS
+                                            <span class="table-icon">
+                                                <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                                            </span>
+                                            Zmiany w KRS
                                         </td>
                                         <td style="text-align: right; ">
                                             Wnesienie zmian danych o przedsiębiorstwie
@@ -755,7 +911,9 @@
                 <div id="calculator" class="tab-content">
                     <div class="calculator-section">
                         <div class="calculator-header">
-                            <h2>🧮 Kalkulator Kosztów</h2>
+                            <h2><span class="table-icon">
+                                    <svg viewBox="0 0 24 24" style="width: 32px; height: 32px; fill: var(--color-accent);"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+                                </span> Kalkulator Kosztów</h2>
                             <p>Oblicz szacunkowe koszty obsługi księgowej i kadrowej dla Twojej firmy</p>
                         </div>
 
@@ -790,8 +948,8 @@
                                             <label for="company-registration">
                                                 <strong>Rejestracja Sp. z o.o.<br><small style="opacity: 0.8;">KRS, CRBR, PCC-3, NIP-8, e-urząd skarbowy</small></strong>
                                                 <span style="display: block; font-size: 0.85em; color: #F57C00; margin-top: 2px;">
-                                🎉 <s>1500 zł</s> → <strong>750 zł</strong> przy wyborze pakietu (-50%)
-                            </span>
+                                                    <s>1500 zł</s> → <strong>750 zł</strong> przy wyborze pakietu (-50%)
+                                                </span>
                                             </label>
                                         </div>
                                         <div class="checkbox-item">
@@ -811,7 +969,10 @@
                             </div>
 
                             <div class="calculator-result">
-                                <h3 class="result-title">📊 Szacunkowe koszty</h3>
+                                <h3 class="result-title">
+                                    <span class="table-icon">
+                                        <svg viewBox="0 0 24 24" style="width: 24px; height: 24px; fill: white;"><path d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.1h-15V5h15v14.1zm0-16.1h-15c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                                    </span> Szacunkowe koszty</h3>
                                 <div class="result-breakdown" id="cost-breakdown">
                                     <div class="result-item">
                                         <span>Wybierz typ działalności</span>
@@ -820,7 +981,7 @@
                                 </div>
                                 <div class="result-footer">
                                     <div class="result-total" id="total-cost">0 zł / miesiąc</div>
-                                    <a href="#" onclick="showPage('contact')" class="btn btn-primary">💬 Skontaktuj się z nami</a>
+                                    <a href="#" onclick="showPage('contact')" class="btn btn-primary">Skontaktuj się z nami</a>
                                     <p class="result-note">
                                         * Podane ceny są orientacyjne. Dokładna wycena zostanie przygotowana po konsultacji.
                                     </p>
@@ -831,7 +992,9 @@
 
                     <div style="text-align: center; margin-top: 3rem;">
                         <div class="card" style="max-width: 600px; margin: 0 auto;">
-                            <span class="card-icon">💡</span>
+                            <div class="icon-badge">
+                                <svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/></svg>
+                            </div>
                             <h3 class="card-title">Potrzebujesz indywidualnej wyceny?</h3>
                             <div class="card-content">
                                 <p style="margin-bottom: 1.5rem;">Każda firma ma swoje unikalne potrzeby. Skontaktuj się z nami, aby otrzymać spersonalizowaną ofertę.</p>
@@ -863,6 +1026,7 @@
                         <div class="anna-photo">
                             <img style="width: 80%;" src="vistek_logo.png" alt="logo">
                         </div>
+
                         <h3 class="card-title">Kontakt bezpośredni</h3>
                         <div class="card-content">
                             <p style="font-size: var(--font-size-lg); font-weight: 600; margin: var(--space-sm) 0;">📞 +48 451 270 218</p>
@@ -874,7 +1038,9 @@
                     </div>
 
                     <div class="contact-card">
-                        <span class="card-icon">🏛️</span>
+                        <div class="icon-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 2L2 7v3h20V7l-10-5zM2 21h9v-2H2v2zm10 0h10v-2H12v2zM3 19h18v-6H3v6z"/></svg>
+                        </div>
                         <h3 class="card-title">Dane firmy</h3>
                         <div class="card-content">
                             <p style="font-weight: 600; margin-bottom: var(--space-sm);">VISTEK SP. Z O.O.</p>
